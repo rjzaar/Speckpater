@@ -1,0 +1,533 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/92/speckpater/trunk/levels
+END
+junglebg.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/junglebg.png
+END
+testlevel.tga
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/92/speckpater/trunk/levels/testlevel.tga
+END
+level1_1_.tga
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_1_.tga
+END
+level1_1.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_1.tga
+END
+level1_2.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_2.tga
+END
+level1_3.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_3.tga
+END
+level3_1.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_1.tga
+END
+level1_4.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_4.tga
+END
+level3_2.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_2.tga
+END
+level5_1.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_1.tga
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/92/speckpater/trunk/levels/__init__.py
+END
+level1_5.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_5.tga
+END
+level3_3.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_3.tga
+END
+level5_2.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_2.tga
+END
+level3_4.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_4.tga
+END
+level5_3.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_3.tga
+END
+level5_4.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_4.tga
+END
+gamelevel1_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_3.py
+END
+gamelevel3_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel3_1.py
+END
+gamelevel2_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_4.py
+END
+gamelevel4_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_2.py
+END
+level2_1.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_1.lev
+END
+testlevel.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/testlevel.py
+END
+level2_2.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_2.lev
+END
+level2_3.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_3.lev
+END
+level4_1.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_1.lev
+END
+level2_4.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_4.lev
+END
+level4_2.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_2.lev
+END
+level2_5.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_5.lev
+END
+level4_3.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_3.lev
+END
+gamelevel4_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_x.py
+END
+level4_4.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_4.lev
+END
+mountain.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/mountain.tga
+END
+templestruct.tga
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/92/speckpater/trunk/levels/templestruct.tga
+END
+triggers.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/triggers.png
+END
+gamelevel4_tmp_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_tmp_1.py
+END
+templebg.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/templebg.png
+END
+gamelevel1_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_2.py
+END
+gamelevel4_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_1.py
+END
+gamelevel2_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_3.py
+END
+gamelevel5_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel5_2.py
+END
+gamelevel3_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel3_4.py
+END
+gamelevel1_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_x.py
+END
+gamelevel5_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel5_x.py
+END
+kilopowa.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/kilopowa.lev
+END
+amountain.lev
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/92/speckpater/trunk/levels/amountain.lev
+END
+level2_1.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_1.tga
+END
+level2_2.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_2.tga
+END
+level4_1.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_1.tga
+END
+level2_3.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_3.tga
+END
+mountainbg.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/92/speckpater/trunk/levels/mountainbg.png
+END
+level4_2.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_2.tga
+END
+level2_4.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_4.tga
+END
+level4_3.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_3.tga
+END
+level2_5.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level2_5.tga
+END
+level4_4.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level4_4.tga
+END
+gamelevel1_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_1.py
+END
+gamelevel2_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_2.py
+END
+testlevel.lev
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/92/speckpater/trunk/levels/testlevel.lev
+END
+gamelevel5_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel5_1.py
+END
+gamelevel3_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel3_3.py
+END
+gamelevel1_5.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_5.py
+END
+level1_1.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_1.lev
+END
+level1_2.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_2.lev
+END
+level3_1.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_1.lev
+END
+level1_3.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_3.lev
+END
+gamelevel4_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_4.py
+END
+level3_2.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_2.lev
+END
+level1_4.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_4.lev
+END
+level3_3.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_3.lev
+END
+level1_5.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level1_5.lev
+END
+gamelevel2_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_x.py
+END
+level5_1.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_1.lev
+END
+level3_4.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level3_4.lev
+END
+level5_2.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_2.lev
+END
+level5_3.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_3.lev
+END
+level5_4.lev
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/level5_4.lev
+END
+gamelevel6_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel6_x.py
+END
+gamelevel2_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_1.py
+END
+gamelevel1_4.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel1_4.py
+END
+gamelevel3_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel3_2.py
+END
+gamelevel2_5.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel2_5.py
+END
+gamelevel4_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel4_3.py
+END
+gamelevel6_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel6_1.py
+END
+kilopowa.tga
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/levels/kilopowa.tga
+END
+gamelevel3_x.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/levels/gamelevel3_x.py
+END
+bmountain.tga
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/92/speckpater/trunk/levels/bmountain.tga
+END
+cavebg.png
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/92/speckpater/trunk/levels/cavebg.png
+END

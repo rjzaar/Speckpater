@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/92/speckpater/trunk/enemies
+END
+groundenemy.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/92/speckpater/trunk/enemies/groundenemy.py
+END
+rollingobject.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/92/speckpater/trunk/enemies/rollingobject.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/enemies/__init__.py
+END
+hungrymonkey.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/92/speckpater/trunk/enemies/hungrymonkey.py
+END
+popupenemy.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/92/speckpater/trunk/enemies/popupenemy.py
+END
+snake.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/enemies/snake.py
+END
+monkey.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/92/speckpater/trunk/enemies/monkey.py
+END
+puma.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/92/speckpater/trunk/enemies/puma.py
+END
+guava.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/enemies/guava.py
+END
+beeswarm.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/enemies/beeswarm.py
+END
+bat.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/92/speckpater/trunk/enemies/bat.py
+END
+beehive.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/92/speckpater/trunk/enemies/beehive.py
+END
+jaguar.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/92/speckpater/trunk/enemies/jaguar.py
+END
+eagle.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/enemies/eagle.py
+END
+enemy.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/enemies/enemy.py
+END
+fallingblock.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/92/speckpater/trunk/enemies/fallingblock.py
+END

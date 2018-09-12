@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2006-06-18 14:33+Normaaliaika\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: base.py:137
+msgid "Color depth"
+msgstr ""
+
+#: base.py:137
+msgid "Gamma correction"
+msgstr ""
+
+#: base.py:139
+msgid "Sounds enabled"
+msgstr ""
+
+#: base.py:140
+msgid "Full screen"
+msgstr ""
+
+#: levels\gamelevel1_1.py:13
+msgid ""
+"\"Oooh, my aching head!\n"
+"\tThe last thing I remember...\n"
+"...is the engine failure light in the cockpit....\""
+msgstr ""
+
+#: levels\gamelevel1_1.py:17
+msgid ""
+"What a mess! Thank the Lord I'm okay.\n"
+"\tWhere are all the Kilopawa New Testaments?\n"
+"Oh no, Lord!\n"
+"\tThey must have spilled out of the plane!"
+msgstr ""
+
+#: levels\gamelevel1_2.py:15
+msgid ""
+"\"That monkey is wandering right next to that Bible\n"
+"\t\t\thow am I going to get past it?\n"
+"\t\t\tMaybe I should try throwing it a banana, since I got some with me.\"\n"
+"\t\t\tHint: press 'T' to throw a banana."
+msgstr ""
+
+#: levels\gamelevel1_3.py:11
+msgid ""
+"Hint:\n"
+"You can press 'space' for Dave to jump,\n"
+"and 'up' for him to climb vines!"
+msgstr ""
+
+#: levels\gamelevel1_4.py:12
+msgid ""
+"\"I've got a long way to go,\n"
+"and it looks like it's going to rain.\n"
+"I pray I can find good shelter soon!\""
+msgstr ""
+
+#: levels\gamelevel1_4.py:27
+msgid ""
+"\"I think I need to cross this gulley,\n"
+"but it's too far for me to jump from here.\""
+msgstr ""
+
+#: levels\gamelevel1_4.py:39
+msgid ""
+"*CRACK*\n"
+"\t\"Whoops!\""
+msgstr ""
+
+#: levels\gamelevel1_4.py:49
+msgid "\"Please save me, Lord!\""
+msgstr ""
+
+#: levels\gamelevel2_1.py:12
+msgid "\"...aaaaAAAAH!\""
+msgstr ""
+
+#: levels\gamelevel2_1.py:28
+msgid ""
+"\"I must have fallen into an underground cave.\n"
+"Well, at least I'm out of the rain.\n"
+"\tWhat's that noise?!?\""
+msgstr ""
+
+#: levels\gamelevel2_1.py:41
+msgid ""
+"\"It's stopped.\n"
+"\tI think that must have been a landslide,\n"
+"the cave entrance looks closed off now.\n"
+"\tI'll just have to find another way out.\""
+msgstr ""
+
+#: levels\gamelevel2_1.py:52
+msgid "\"This passage looks good... I'll keep going.\""
+msgstr ""
+
+#: levels\gamelevel2_3.py:18
+msgid ""
+"The sign reads:\n"
+"\t\"<--- Mine exit\""
+msgstr ""
+
+#: levels\gamelevel2_3.py:27
+msgid ""
+"The sign reads:\n"
+"\t\"To mine exit --->\""
+msgstr ""
+
+#: levels\gamelevel2_3.py:36
+msgid ""
+"The sign reads:\n"
+"\t\"CAUTION: Danger ahead!\""
+msgstr ""
+
+#: levels\gamelevel2_3.py:45
+msgid ""
+"The sign reads:\n"
+"\t\"DANGER: Last chance to turn back!\""
+msgstr ""
+
+#: levels\gamelevel2_3.py:55
+msgid "\"I've got an uneasy feeling about this...\""
+msgstr ""
+
+#: levels\gamelevel2_4.py:11
+msgid ""
+"\"Phew, is it just me or\n"
+"is it getting warm in here?\""
+msgstr ""
+
+#: levels\gamelevel2_4.py:15
+msgid ""
+"\"Well that looks like the exit, but the path's caved in!\n"
+"\tI pray I can find another way out...\""
+msgstr ""
+
+#: levels\gamelevel2_4.py:24
+msgid ""
+"The sign reads:\n"
+"\t\"CAUTION: Lava flows\""
+msgstr ""
+
+#: levels\gamelevel2_4.py:33
+msgid ""
+"The sign reads:\n"
+"\t\"Mine exit\""
+msgstr ""
+
+#: levels\gamelevel2_4.py:41
+msgid "\"Praise the Lord -- fresh air!\""
+msgstr ""
+
+#: levels\gamelevel3_1.py:11
+msgid "\"Thank you God for getting me out of the dreary caves!\""
+msgstr ""
+
+#: levels\gamelevel3_1.py:15
+msgid "Hey! Bad monkey! Don't throw guavas at that Bible!"
+msgstr ""
+
+#: levels\gamelevel3_2.py:11
+msgid ""
+"I wonder if there are any monkey predators in this jungle.\n"
+"These monkeys are really annoying!\n"
+"Yikes a jaguar! Help me God!"
+msgstr ""
+
+#: levels\gamelevel3_2.py:15
+msgid ""
+"Whew! I'll climb that vine and take to the trees.\n"
+"That jaguar looks nasty!"
+msgstr ""
+
+#: levels\gamelevel3_2.py:26
+msgid "I hope I don't see any more of those jaguars!"
+msgstr ""
+
+#: levels\gamelevel4_1.py:12
+msgid "\"It looks like I'll have to start climbing from here.\""
+msgstr ""
+
+#: levels\gamelevel4_1.py:24
+msgid ""
+"\"This Bible is in good condition, some of the pages are just folded.\n"
+"\t\t\tHey what does it say in here, psalm 61, verse 2,\n"
+"\t\t\t'From the end of the earth will I cry unto thee,\n"
+"\t\t\twhen my heart is overwhelmed: \n"
+"\t\t\tlead me to the rock that is higher than I.'\n"
+"\t\t\tOh, thank you my Lord Jesus for your word this encouraged me a lot!\"\n"
+"\t\t\t"
+msgstr ""
+
+#: levels\gamelevel4_1.py:37
+msgid ""
+"\"Eagles! That's a fine creature, like all of God's creations.\n"
+"\t\t\tI better keep out of it's way or I might get hurt. \n"
+"\t\t\tHmm what did that one verse say about eagles again... \n"
+"\t\t\tI think it was in Job, chapter 39, verse 27, \n"
+"\t\t\t'Doth the eagle mount up at thy command, \n"
+"\t\t\tand make her nest on high?'\"\n"
+"\t\t\t"
+msgstr ""
+
+#: levels\gamelevel4_1.py:72
+msgid "\"Light! Thank you Jesus!\""
+msgstr ""
+
+#: levels\gamelevel4_1.py:88
+msgid ""
+"\"A tunnel, narrow one... I wonder where it leads, hopefully up?\n"
+"Well there isn't any other way so I'll just have to find out!\""
+msgstr ""
+
+#: levels\gamelevel4_2.py:14
+msgid ""
+"\"Another Bible for the lost, thank you Jesus!\"\n"
+"\t\t\tHmmm there seems to be bit dirt on this text... There now it's clean!\n"
+"\t\t\tPsalm 118, verse 22,  'The stone which the builders refused is\n"
+"\t\t\t'become the head stone of the corner.'\n"
+"\t\t\tAah yes that is important verse to remember."
+msgstr ""
+
+#: levels\gamelevel4_2.py:25
+msgid "\"Wow slippy rock!\""
+msgstr ""
+
+#: levels\gamelevel5_1.py:16
+msgid ""
+"\"Hmm I wonder how I'm going to get across from here.\n"
+"Maybe I should climb to that tree branch.\""
+msgstr ""
+
+#: levels\gamelevel5_1.py:24
+msgid "\"The jump is too long!\""
+msgstr ""
+
+#: levels\gamelevel5_2.py:21
+msgid "\"Wow, a hidden passage!\""
+msgstr ""
+
+#: levels\gamelevel5_2.py:37
+msgid "\"What's that noice? Sounds like a huge rolling stone.\""
+msgstr ""
+
+#: levels\gamelevel5_3.py:74
+msgid ""
+"*Click*\n"
+"\tYou feel the temple quake as you\n"
+"trigger the final touchplate."
+msgstr ""
+
+#: levels\gamelevel5_3.py:90
+msgid ""
+"These blocks are in my way...\n"
+"there's got to be some trick to getting past them."
+msgstr ""
+
+#: levels\gamelevel5_3.py:117
+msgid "*Click*"
+msgstr ""
+
+#: levels\gamelevel5_3.py:124
+msgid ""
+"*Clunk*\n"
+"\tI can't help thinking that these clunks\n"
+"are messing things up."
+msgstr ""
+
+#: levels\gamelevel5_3.py:126
+msgid ""
+"*Clunk*\n"
+"\tMaybe there's an order I should be\n"
+"stepping on these things in."
+msgstr ""
+
+#: levels\gamelevel5_3.py:128
+msgid ""
+"*Clunk*\n"
+"\tI bet if I jumped over some plates and\n"
+"stepped on other ones instead, I could get\n"
+"more to click into place."
+msgstr ""
+
+#: levels\gamelevel5_3.py:130
+msgid ""
+"*Clunk*\n"
+"\tI think I should start with that first\n"
+"one that clicks, and then try to find\n"
+"the next one to step on to make it click."
+msgstr ""
+
+#: levels\gamelevel5_3.py:132
+msgid ""
+"*Clunk*\n"
+"\tThose clunks are starting to get on my nerves."
+msgstr ""
+
+#: levels\gamelevel5_3.py:134
+msgid ""
+"*Clunk*\n"
+"\tIs this really getting me anywhere?"
+msgstr ""
+
+#: levels\gamelevel5_3.py:136
+msgid ""
+"*Clunk*\n"
+"\tOkay Dave. Let's check our Fruit status...\n"
+"\tlove...\tgood.\n"
+"\tjoy...\tgood.\n"
+"\tpeace...\t...\tacceptable\n"
+"\tpatience...\t...\t...\t...\t...I think\n"
+"I've just about lost all my available patience."
+msgstr ""
+
+#: levels\gamelevel5_3.py:138
+msgid ""
+"*Clunk*\n"
+"\tAre we ever going to get out of here?"
+msgstr ""
+
+#: levels\gamelevel5_3.py:141
+msgid "*Clunk*"
+msgstr ""
+
+#: levels\gamelevel6_1.py:46
+msgid ""
+"\"Aah there, I can see it, the kilapowa village!\n"
+"Praise the Lord my God!\""
+msgstr ""
+
+#: levels\gamelevel6_1.py:54
+msgid ""
+"\"Today has salvation come to this village!\n"
+"Come to the living God, all you who hunger!\""
+msgstr ""
+
+#: levels\gamelevel6_1.py:71
+msgid ""
+"\"Repent now and turn to living God who has made heaven and earth!\"\n"
+"\t\t\t\t 'Who in times past suffered all nations to walk in their own ways.\n"
+"\t\t\t\t Nevertheless he left not himself without witness,\n"
+"\t\t\t\t in that he did good, and gave us rain from heaven,\n"
+"\t\t\t\t and fruitful seasons,\n"
+"\t\t\t\t filling our hearts with food and gladness.'\n"
+"\t\t\t\t"
+msgstr ""
+
+#: levels\gamelevel6_1.py:88
+msgid ""
+"\"'For God so loved the world, that he gave his only begotten Son,\n"
+"\t\t\t\t\tthat whosoever believeth in him should not perish,\n"
+"\t\t\t\t\t\tbut have everlasting life.'\n"
+"\t\t\t\t "
+msgstr ""
+
+#: levels\gamelevel6_1.py:100
+msgid ""
+"\"It is written: 'there is none that doeth good, no, not one.'\n"
+"\t\t\t\tand\n"
+"\t\t\t\t'For all have sinned, and come short of the glory of God;'\n"
+"\t\t\t\tDo you know that you are slaves of sin?\n"
+"\t\t\t\t'Whosoever committeth sin is the servant of sin.'\n"
+"\t\t\t\tAnd do you know the wages of sin?\n"
+"\t\t\t\t'For the wages of sin is death;\n"
+"\t\t\t\tbut the gift of God is eternal life through Jesus Christ\n"
+"\t\t\t\tour Lord.'\"\n"
+"\t\t\t\t"
+msgstr ""
+
+#: levels\gamelevel6_1.py:130
+msgid ""
+"\"Let every man have his own wife\n"
+"\t\t\tand may they love each other as them self. \n"
+"\t\t\tLike apostole Paul speaks in his first letter to the corinthians.\n"
+"\t\t\tWife submitting to her caring husband.\n"
+"\t\t\tBut if some one does not believe, do not give up from hope \n"
+"\t\t\tfor your faith sanctifies your mariage \n"
+"\t\t\tso that your children may too be holy.\n"
+"\t\t\t"
+msgstr ""
+
+#: main.py:175
+msgid "Bible Dave v%s"
+msgstr ""
+
+#: menu.py:24
+msgid "Community Project"
+msgstr ""
+
+#: menu.py:124
+msgid "Bible Dave - Christian Coders Community project v%s"
+msgstr ""
+
+#: menu.py:126
+msgid "Use the arrow keys to scroll through"
+msgstr ""
+
+#: menu.py:127
+msgid "the options and press enter to select"
+msgstr ""
+
+#: menu.py:129
+msgid "Start a new game"
+msgstr ""
+
+#: menu.py:130
+msgid "Continue game"
+msgstr ""
+
+#: menu.py:131
+msgid "Options"
+msgstr ""
+
+#: menu.py:132
+msgid "Credits"
+msgstr ""
+
+#: menu.py:133
+msgid "Exit"
+msgstr ""
+
+#: menu.py:223
+msgid "Easy"
+msgstr ""
+
+#: menu.py:223
+msgid "Hard"
+msgstr ""
+
+#: menu.py:223
+msgid "Normal"
+msgstr ""
+
+#: menu.py:255
+msgid "Use left and right arrow keys to change the difficulty level and press enter to start the game"
+msgstr ""
+
+#: menu.py:323
+msgid "True"
+msgstr ""
+
+#: menu.py:324
+msgid "False"
+msgstr ""
+
+#: menu.py:336
+msgid "Use up and down arrow keys to move between options and left and right keys to change them."
+msgstr ""
+
+#: menu.py:337
+msgid "When done press return to save and exit or escape to leave without saving the changes."
+msgstr ""
+

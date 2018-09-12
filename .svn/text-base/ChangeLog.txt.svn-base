@@ -1,0 +1,561 @@
+02/04/08
+--------
+Joe -- Turned Testing mode on to temporarily fix all level loading bugs on Easy and Medium. Modified level 4_1 to include better puzzle element. Tweaked some levels in chapter 1.
+Uncommented joystick controls now that I have one that works (Xbox 360 controller)
+
+01/29/08
+--------
+Joe -- Modified a level to include a puzzle element. Tweaked some levels (primarily in cave chapters) Raised version to 0.9.
+
+07/06/07
+--------
+Joe -- Increased the fall damage and lowered fall damage distance distance. Increased the amount of encouragement that jaguars take away.
+
+07/05/07
+--------
+Joe -- Completed remaining unfinished levels and fixed a bug in the gamelevel6_1.py code that would cause the game to display the Game Over screen immediately after the player spawned.
+
+07/02/07
+--------
+Joe --
+  Added code to take player back to previous levels if the player doesn't have enough bibles to complete the game (difficulty based). Added a game over window once the player beats the game. Previous 0.6 and 0.7 versions let the player cheat if he is clever enough to notice that the Bible and Banana count didn't reset if the player died on a level. The player could essentially pick up 4 bibles on a level, die, and pick those bibles up again to have a total of 8 thus beating the game by collecting bibles from only 1 leve.
+
+07/02/07
+--------
+Joe --
+  Improved music code, added ability to disable music from menu system. Made some levels less difficult and polished others.
+
+05-06/29/07
+-----------
+Joe --
+  Added music, and code to change song whenever the chapters change. Added many new levels and removed some older ones.
+
+01-02/03/07
+-----------
+Joe --
+  Created new levels, fixed the deprecation warning, uploaded new graphics files, almost finished main menu. Raised version to 0.7.5
+
+11/01/06
+--------
+Joe --
+  Fixed the buggy fullscreen/windowed code. Raised version to 0.7.1 and made a release.
+
+9/21/2006
+---------
+Matt --
+  Enhanced the Tilevid class to generate a buffer at startup so each frame update
+  requires less blits to the screen.
+
+9/18/2006
+---------
+Joe --
+  Rewrote all of menu UI and some base code. Some features have not been
+  re-written yet. Raised version to 0.7
+
+8/9/2006
+--------
+Joe --
+  Raised version to 0.6.8.1 as a result of a few bug fixes
+
+8/9/2006
+Jari --
+  Fixed crash when v0.6.8 user loaded old save game
+
+8/8/2006
+--------
+Steve --
+  Fixed a bug in level 5_1. 
+  Added joystick support (a couple days ago).
+
+8/8/2006
+--------
+Joe --
+  Changed default bpp to 32 (as 16 should really be a last resort incase the
+  FPS goes extremely high for some abnormal reason)
+
+8/7/2006
+--------
+Joe --
+  Raised version to 0.6.8 (because of joystick support). Banana amnt is
+  carried on to next level. Code saves banana amnt to file and reads from
+  it at level load.
+
+8/6/2006
+--------
+Joe --
+  Added new background for levels 5_x
+
+8/5/2006
+--------
+Joe --
+  Adapted level1_1 and 1_2 to fit new story line. Updated enemy trigger
+  tileset to use new graphics.
+
+8/2/2006
+--------
+Joe --
+  Changed version to 0.6.7
+
+8/2/2006
+---------
+Jari --
+  Dave now has limited banana supply (Gather more from trees and press T to throw)
+
+7/25/2006
+---------
+Joe --
+  Set base.drawTextColored()'s orig = font.render(message, 0, fontcolor,
+  background=color) to turn on anti-aliasing because having anti-aliasing off
+  was causing the game to crash.
+
+7/22/2006
+---------
+Jari --
+  Improved the ground enemies AI so that they wont try to chase Dave if they can't reach him
+
+7/13/2006
+---------
+Joe --
+  Switched levels 5_x and 4_x around because that's the way the should be,
+  according to the story line and design docs
+
+7/9/2006
+--------
+Joe --
+  Fixed a bug in level5_4
+  Fixed bugs in bibledave.nsi and setup.py
+
+7/8/2006
+--------
+Joe --
+  Attempted to make level5_4 harder
+  Fixed a bug in loadImage() in base.py from:
+  print "Failed loading image '%s', reason: '%s'"  (name, message)
+  to:
+  print "Failed loading image '%s', reason: '%s'" % (name, message)
+
+7/7/2006
+--------
+Joe --
+  Fixed the "New Game" bug (if an old game was present, the code would load
+  the old game's data and not create new data for a new game)
+  Also fixed some of the weird and irregular indentation in main.py
+  Removed the i and j variables and changed all instances of them to
+  data['chapter'] and data['level']
+
+7/2/2006
+--------
+Joe --
+  Added looping music support to BD through music.py
+
+7/1/2006
+--------
+Jari --
+  Added localization support. Currently supported languages are English and Finnish.
+  Changed version to 0.6.6
+
+6/18/2006
+---------
+Jari --
+  New eagle frames by Neil.
+
+6/15/2006
+---------
+Joe --
+  New level, chapter, bible and game difficulty saving function. It works even
+  if the .bibledave file is missing.
+
+6/15/2006
+---------
+Jari --
+  New hungry monkey (walking, eating, etc, animation) and kilopowa (villagers, hut, cauldron) graphics by Neil.
+
+6/3/2006
+--------
+Jari --
+  Added hungry monkeys to level 1_2
+
+6/1/2006
+--------
+Jari --
+  Player cannot no more jump by holding down space but instead the space must be released after jump in order to jump again
+  An exclamation mark is displayed above Dave's head when he has something less important to say, which can be displayed by pressing the M key.
+  
+5/28/2006
+---------
+Jari -- 
+  Hud is now minimized when dialog is off and camera's y position is centered so that player can see equal amount of game area above and below Dave.
+  
+5/27/2006
+---------
+Joe --
+  Dave save the total the number of Bibles when switching levels
+  or restarting the game.
+  
+5/27/2006
+Jari --
+  Some game settings can be now changed from the options menu. This includes enabling sounds and changing the display mode.
+  
+5/26/2006
+Jari --
+  Dave is encouraged by picking up the Bibles
+  
+5/25/2006
+---------
+Jari --
+  Added new level kilopowa village where Dave preaches the Gospel (level 3_3)
+  Changed version to 0.6.5
+
+4/27/2006
+---------
+Joe --
+  Speed up the credits a little bit as they take too long. Removed 3 lines of
+  uneeded code from base.py
+
+4/26/2006
+---------
+Joe --
+  Changed version to 0.6.4.3 (Because of the new PGU and other modifications
+  that someone did [shame on you for not putting them into the ChangeLog!])
+
+4/17/2006
+Jari --
+  Updated PGU to 0.10.3
+  
+3/17/2006
+---------
+Jari --
+  Updated PGU to 0.10.2
+  Moved the jump to level dialog higher
+
+02/28/2006
+----------
+Jari --
+  Updated PGU to 0.10.1 for just in case if there was some important changes
+
+02/26/2006
+----------
+Clint --
+  Added a new level (2-4)
+  Made it so that messages fade out slowly so that they can still be read after the game is unpaused
+
+02/25/2006
+----------
+Jari --
+  Fixed some glitches in the vine climping animation and velocity.
+  Decreased Dave's jump speed by about 6%.
+  Dave will now have problems if he falls from too high
+  Limited Dave's horizontal control while in the air
+
+02/18/2006
+----------
+Jari --
+  Added new enemy that popups from walls when player goes near it's "nest". There's snake and spider variation of it.
+  
+02/16/2006
+----------
+Matt --
+  Updated PGU to 0.10 and modified the code to work with the new version.
+  Changed the screen's bit depth to 32 which increases the framerate.
+
+02/12/2006
+----------
+Jari --
+  New main menu where you use arrow keys to scroll through options and select with enter
+  The game would have crashed with the old menu system if you ran the game first time and tried to continue from a saved game
+
+02/11/2006
+----------
+Clint --
+  Added a new sprite and enemy -- the jaguar. Again, just a copy of the old puma class. Check it out on the test level.
+
+02/11/2006
+----------
+Jari --
+  Changed version to 0.6.4
+  
+02/10/2006
+----------
+Clint --
+  Added two new enemies, the puma (just an extension of Jari's groundenemy) and a falling block (a modified guava).
+  Also reverted some of the storyline text until we can proofread it better.
+  Fixed the bug where the "Press any key to continue..." text would rise.
+
+02/09/2006
+----------
+Clint --
+  Added a new enemy class -- bee hive + swarm. Also made minor tweaks to the monkeys and guavas.
+
+02/9/2006
+----------
+Jari --
+  You can now move through walls when in testing mode and moving in fly mode (numpad)
+  
+02/7/2006
+----------
+Jari --
+  Added courage meter. You lose when the courage drops to zero.
+  Dave now sees stars if he is hit by something.
+  
+02/6/2006
+----------
+Jari --
+  Made the texts in game difficulty selection screen more visible and added a help text
+
+02/5/2006
+----------
+Joe --
+  Added support for playing music (currently only jungleMusic, caveMusic) in
+  sound.py
+
+02/3/2006
+----------
+Jari --
+  Added new game difficulty selection screen that is shown when user starts a new game
+
+02/2/2006
+----------
+Jari --
+  Added difficulty multiplier that effect monkey's guava dropping ratio, bat's flying speed and snake's and other ground creatures moving speed.
+
+01/31/2006
+----------
+Joe --
+  Changed base.py so that when 'Enter' is pressed it continues a saved game
+  rather than start a fresh new one.
+
+01/31/2006
+----------
+Jari --
+  Level's loaded in the editor now use the correct collision and animation script according to their tileset (the default script was used for all tilesets)
+  User can now quit the credits by pressing any key
+
+01/30/2006
+----------
+Jari --
+  Added possibility to specify the background name for new level
+
+01/29/2006
+----------
+Joe --
+  Added automatic level saving and loading feature for *Nix and Windows (Maybe
+  works for mac??). Can also start new game (which erases old one)
+
+01/29/2006
+----------
+Jari --
+  New ground enemy class
+
+01/29/2006
+----------
+Clint --
+  Added two new sprites, a snake and a spider (the spider is just a placeholder, we'll get a better one hopefully).
+  Added the snake enemy which now climbs up and down the vines on the test level. She still needs some more refinement before she's final though.
+
+01/28/2006
+----------
+Joe --
+  Added a menu feature for viewing credits. Changed base.py to import
+  credits.py and start the startcredits() function.
+
+01/28/2006
+----------
+Jari --
+  Dave can now move down from the tree branches where there is vine (levels 1_x)
+  Changed version to 0.6.3
+
+01/27/2006
+----------
+Jari --
+  Created new .lev file format for the levels. The file has the .tga level file name, background, tileset and trigger file name (though the trigger file name is ignored atm). 
+
+01/26/2006
+----------
+Jari --
+  Added bossibility to jump to any level, press F6 to bring up the level select menu
+  Added free move mode. Use 8, 4, 2 and 6 from numpad to move dave around
+  Added "safe mode", press F3 to toggle it on. This will make dave invulnerable
+  Fixed bug in level editor new level option. The tileset and trigger set was not reloaded
+  Changed version to 0.6.2
+
+01/25/2006
+----------
+Clint --
+  Added support for sounds, you can access them through base.sound.Play("SoundLabel")
+
+01/25/2006
+----------
+Clint --
+  Added a new enemy type: "Bat"
+  Updated level 2_1 with a sample of this enemy.
+  Fixed a bug where you couldn't leave level 1_2 because of the new method of moving to the next level
+
+01/25/2006
+---------
+Jari --
+  Improvements in the level editor:
+   - Possibility to create new level file
+   - Loading any level file from the levels directory
+  The level geometry is reloaded once level editor is closed
+  Pressing F5 restarts the level
+
+01/24/2006
+---------
+Jari --
+  Merged changes from day 01/23/2006
+  Fixed a bug that caused the game to crash when trying walk on the lowest tiles of the map
+  Changes in the level loading code
+  Some changes in the level editor, major changes are still ahead
+
+01/23/2006
+---------
+Jari --
+  Pressing enter starts a new game - also n works
+  Enabled quitting by clicking the window x button while in menu. change in waitForKey()
+  Added global variable Testing. When it is set to one the game behaves differently in following ways:
+   - Game runs in windowed mode instead of fullscreen
+   - Escape always quits to main menu instead of pausing the game (useful for quick quitting)
+   - Dialog texts wont be shown in game but instead printed to console and the game continues normally
+  Added exception handling for resource loading failures. You should now see a easily readable error message if loading of some graphic or level file fails
+  Each level now uses a variable self.background as the background graphic file name. It is defined in the level's script class and the default value is "levelbg1h.png"
+  Also level's level file name and tileset name is defined in the script class by variables levelName (default "level1_1") and tilesetName (default "commontiles"). Now we don't have to keep duplicate copies of files and file names are we're changed to more informing names
+  Added temporary fix for IndexError when dave falls out of the screen (catched the exception)
+  Renamed and removed (duplicated ) tileset and background files
+
+01/23/2006
+----------
+Clint --
+  Fixed the bug that caused the game to crash when you fall off the bottom of the screen
+  Added the first enemies for the game, a monkey, and a sub-enemy fruit (guava) that the monkeys drop at random intervals.
+  Modularized Dave's movement to make it easier to tweak the sliding and jumping and speed and whatnot. Check the top of player.py to see all of the new constants.
+ 
+11/12/2005
+----------
+Joe --
+  Cut the menu function out of main.py and created menu.py and Turned on mouse.
+  Edited base.py to wait for the 'n' key to be pressed to start the game.
+  Also made base.py print the whereabouts of the mouse. (Temporary)  
+  Added a splash CCN intro. Also added license, version fonts overtop an edited bibldave.png that has no text on it.
+  Changed version to 0.5.7
+
+11/05/2005
+----------
+Matt --
+  Modified the Hud to take up 1/4 of the screen. This will give us space to put text and stats.
+  Scrolling in the tile editor was changed to mouse button 2
+  Tiles can be selected in tile mode by pressing mouse 1 and background mode by pressing mouse 2.
+  Moved level scripts to the levels directory.
+
+11/04/2005
+----------
+Matt --
+  Added an in-game tile editor. Adding new levels has not yet been implemented.
+  Screen resolution was changed to 800x600. This allowed more screen space for tile editing however it slows down the speed of the game.
+  BaseGameLevel is derived from Tilevid. Since the game level handles tiles and sprites this seemed appropriate.
+
+11/1/2005
+----------
+Clint --
+  Added some momentum to the player so that he slides around a little bit more, to give it a more interesting gameplay feel.
+  Tweaked the starting levels some more.
+
+10/31/2005
+----------
+Clint --
+  Added generic levels for 1_x, 2_x and 3_x that levels can now inherit from
+  Added the first of cave levels (2_1)
+  Added level 1_2 which explains how Dave got into the cave
+  Made main.py a little smarter as far as advancing levels when available
+  Made Player.py copy its rect to the view_rect instead of direct-referencing it (fixes a small bug with earthquakes that way)
+
+10/30/2005
+----------
+Matt --
+  Derived the Player class from PGU's Sprite class.
+  Losing a level kicks the player to the main screen instead of exiting the game.
+  Animation is a bit more flexible. Each state can have a variable amount of frames and each state has its own time interval.
+  You can now exit the game from the menu by pressing escape.
+
+10/29/2005
+----------
+Clint --
+  The HUD now doesn't display 0 Bibles, it only brings that up when there are Bibles collected.
+  Added a rudimentary plane sprite
+  Created a first version of the "first level", where Dave wakes up and walks around.
+  Dave now climbs a rope properly, and isn't animated when he's stopped.
+
+10/29/2005
+----------
+Vincent --
+  Modified tileset to display waterfalls correctly
+  Hide mousecursor
+  Added a randomly generated tiled background
+  Added background paralaxing
+
+
+10/28/2005
+----------
+Clint --
+  Added a basic Bible sprite
+  Added the Bible sprite to the triggers, and edited basegamelevel.py to spawn Bibles when it hits that trigger.
+  Added a num_bibles variable to the tilevid. This variable is incremented when a Bible is hit, and the HUD also looks at this value to display it in the upper-right corner of the screen.
+
+10/26/2005
+----------
+Clint --
+  Added an earthquake mode (see level 1_2 for an example)
+  Restructured the class layout of the game, so that levels are now scripts which are dynamically loaded.
+  Added functions to be overridden in custom levels, OnStart(), OnExit(), and OnRunSpecial1() through OnRunSpecial8()
+  Added a HUD class to manage the heads-up display of the game.
+  Dialogs now scroll the text letter-by-letter, handles newlines ('\n') characters properly, and when a line begins with a horizontal tab character ('\t'), it pauses and waits for the user to press a key before continuing.
+
+10/25/2005
+----------
+Clint --
+  Fixed some of the tabbing in main.py (make sure everyone uses tabs and not 4 spaces)
+  Added a pause capability (temporarily triggered by ESC)
+  Added background sprite animation (tried it a couple of ways, this way was the only one that worked).
+  Removed import from menu.pyc -- it wasn't being used anyways.
+
+10/21/2005
+----------
+Clint --
+  Fixed jumping, so that you can no longer jump in mid-air if you have run off of a ledge.
+  Added some comments to the code
+  You can now no longer exit by jumping into a waterfall tile (which was the old method).
+  Implemented the new sprites in the levels
+  The win_block now uses a blank sprite, simply for collision purposes.
+  The Start.bat now checks for various Python install directories, so that each person hopefully won't have to modify this file. Eventually, this should be made smarter.
+
+10/18/2005
+----------
+Matt --
+  Put the player code from game.py into player.py to separate some of the logic.
+  Created a Player class that is easy to extend with more variables and methods.
+
+10/17/2005
+----------
+Matt --
+  Improved climbing by preventing side to side movement and locking Dave to the center of the tile.
+  When falling, the walking animation is only played if a direction key is pressed.
+  Max levels in an area is set to 4. The code automatically looks for the next level.
+  Modified Dave's overall speed an jumping ability to improve the pace of the game.
+
+10/17/2005
+----------
+Clint --
+  Added many more graphics files, and added animation.
+  To assist in the animation organization, added some globals to help us keep track of the character's state and direction. Changed the code accordingly. 
+  Renamed yvel to dy to be consistent with dx. (though perhaps we should change both to xvel and yvel for clarity, as not everyone's taken calculus)
+
+10/16/2005
+----------
+Clint -- 
+  Moved all of the other functions in game.py to be within the Game class.
+  Added many more comments. 
+  Added a new sprite which looks a little better than my previous one.
+  Also included the original Dave sprite. I'm not sure which one to use, but whatever -- both are there, and you can use whichever you like. :) 
+  Added a new Win_Block sprite object, so now where you put a code 63 (3F or something), it will now spawn a little sign object which is your exit marker. Later, we can have this animated and spinning or glowing or whatever we want, but I think having it be a code in the map is the "proper" way to do it (rather than just having a trigger tile). 
+  Modified the tile map so the pillars are no longer blocking.
+  Slightly increased Dave's jump ability (from 13 to 14).
+  Some level modifications (to use the new exit tile, as well as some major changes to level 1_2 to deal with Dave's new height but still lacking jumping capabilities.
