@@ -3,77 +3,11 @@ svn:wc:ra_dav:version-url
 V 40
 /svn/!svn/ver/92/speckpater/trunk/sounds
 END
-Thud.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/svn/!svn/ver/92/speckpater/trunk/sounds/Thud.ogg
-END
-oof1.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/svn/!svn/ver/92/speckpater/trunk/sounds/oof1.ogg
-END
-steam.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/!svn/ver/92/speckpater/trunk/sounds/steam.ogg
-END
-buzz1.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/!svn/ver/92/speckpater/trunk/sounds/buzz1.ogg
-END
-clunk.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/!svn/ver/92/speckpater/trunk/sounds/clunk.ogg
-END
-cave.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/svn/!svn/ver/92/speckpater/trunk/sounds/cave.ogg
-END
 pop1.ogg
 K 25
 svn:wc:ra_dav:version-url
 V 49
 /svn/!svn/ver/92/speckpater/trunk/sounds/pop1.ogg
-END
-pop2.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/svn/!svn/ver/92/speckpater/trunk/sounds/pop2.ogg
-END
-yeow.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/svn/!svn/ver/92/speckpater/trunk/sounds/yeow.ogg
-END
-jungle.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 51
-/svn/!svn/ver/92/speckpater/trunk/sounds/jungle.ogg
-END
-click.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/!svn/ver/92/speckpater/trunk/sounds/click.ogg
-END
-temple.ogg
-K 25
-svn:wc:ra_dav:version-url
-V 51
-/svn/!svn/ver/92/speckpater/trunk/sounds/temple.ogg
 END
 bgmusic.ogg
 K 25
@@ -81,11 +15,53 @@ svn:wc:ra_dav:version-url
 V 52
 /svn/!svn/ver/92/speckpater/trunk/sounds/bgmusic.ogg
 END
-sound01.ogg
+pop2.ogg
 K 25
 svn:wc:ra_dav:version-url
-V 52
-/svn/!svn/ver/92/speckpater/trunk/sounds/sound01.ogg
+V 49
+/svn/!svn/ver/92/speckpater/trunk/sounds/pop2.ogg
+END
+Thud.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/92/speckpater/trunk/sounds/Thud.ogg
+END
+click.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/sounds/click.ogg
+END
+clunk.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/sounds/clunk.ogg
+END
+oof1.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/92/speckpater/trunk/sounds/oof1.ogg
+END
+cave.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/92/speckpater/trunk/sounds/cave.ogg
+END
+temple.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/92/speckpater/trunk/sounds/temple.ogg
+END
+mountain.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/92/speckpater/trunk/sounds/mountain.ogg
 END
 sound10.ogg
 K 25
@@ -93,11 +69,23 @@ svn:wc:ra_dav:version-url
 V 52
 /svn/!svn/ver/92/speckpater/trunk/sounds/sound10.ogg
 END
-mountain.ogg
+steam.ogg
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/svn/!svn/ver/92/speckpater/trunk/sounds/mountain.ogg
+V 50
+/svn/!svn/ver/92/speckpater/trunk/sounds/steam.ogg
+END
+sound01.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/92/speckpater/trunk/sounds/sound01.ogg
+END
+yeow.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/92/speckpater/trunk/sounds/yeow.ogg
 END
 angrybuzz.ogg
 K 25
@@ -116,4 +104,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 52
 /svn/!svn/ver/92/speckpater/trunk/sounds/sound09.ogg
+END
+jungle.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/92/speckpater/trunk/sounds/jungle.ogg
+END
+buzz1.ogg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/92/speckpater/trunk/sounds/buzz1.ogg
 END

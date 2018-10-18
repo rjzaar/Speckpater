@@ -3,53 +3,17 @@ svn:wc:ra_dav:version-url
 V 49
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default
 END
-dot.down.png
+dialog.close.hover.tga
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.down.png
+V 72
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.hover.tga
 END
-box.down.png
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.down.png
-END
-out.tga
-K 25
-svn:wc:ra_dav:version-url
-V 57
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/out.tga
-END
-radio.png
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.png
-END
-slider.bar.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.bar.hover.tga
-END
-rdot.normal.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.normal.png
-END
-config.txt
+slider.tga
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/config.txt
-END
-menu.down.tga
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.down.tga
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.tga
 END
 select.selected.down.tga
 K 25
@@ -57,113 +21,11 @@ svn:wc:ra_dav:version-url
 V 74
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.selected.down.tga
 END
-slider.bar.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.bar.normal.tga
-END
-button.down.tga
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/button.down.tga
-END
-checkbox.off.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.off.hover.tga
-END
-select.option.hover.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.option.hover.png
-END
-desktop.png
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/desktop.png
-END
-select.options.png
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.options.png
-END
-checkbox.off.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.off.normal.tga
-END
 check.png
 K 25
 svn:wc:ra_dav:version-url
 V 59
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/check.png
-END
-dot.normal.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.normal.png
-END
-input.focus.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/input.focus.png
-END
-box.normal.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.normal.png
-END
-radio.off.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.off.hover.tga
-END
-select.arrow.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.hover.tga
-END
-menu.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.normal.tga
-END
-select.selected.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.selected.normal.tga
-END
-button.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/button.hover.tga
-END
-radio.off.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.off.normal.tga
-END
-input.normal.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/input.normal.png
 END
 button.normal.tga
 K 25
@@ -171,41 +33,53 @@ svn:wc:ra_dav:version-url
 V 67
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/button.normal.tga
 END
-rdot.hover.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.hover.png
-END
-generate.py
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/generate.py
-END
 dialog.png
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.png
 END
-dialog.close.down.tga
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.down.tga
-END
-dialog.bar.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.bar.png
-END
-Thumbs.db
+notes.txt
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/Thumbs.db
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/notes.txt
+END
+radio.on.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.on.normal.tga
+END
+config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/config.txt
+END
+select.arrow.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.hover.tga
+END
+input.normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/input.normal.png
+END
+tool.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/tool.hover.tga
+END
+select.selected.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.selected.normal.tga
 END
 desktop.xcf
 K 25
@@ -213,17 +87,35 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/desktop.xcf
 END
-select.arrow.down.tga
+select.option.normal.png
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.down.tga
+V 74
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.option.normal.png
 END
-x.png
+checkbox.on.normal.tga
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/x.png
+V 72
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.on.normal.tga
+END
+menu.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.hover.tga
+END
+Thumbs.db
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/Thumbs.db
+END
+idot.normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/idot.normal.png
 END
 dot.hover.png
 K 25
@@ -237,17 +129,23 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.png
 END
-slider.tga
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.tga
-END
 box.hover.png
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.hover.png
+END
+rdot.down.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.down.png
+END
+desktop.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/desktop.png
 END
 checkbox.on.hover.tga
 K 25
@@ -261,53 +159,41 @@ svn:wc:ra_dav:version-url
 V 63
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/tool.down.tga
 END
-dialog.close.hover.tga
+rdot.normal.png
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.hover.tga
+V 65
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.normal.png
 END
-menu.hover.tga
+tool.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/tool.normal.tga
+END
+dialog.close.down.tga
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.down.tga
+END
+box.down.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.down.png
+END
+button.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/button.hover.tga
+END
+rdot.hover.png
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.hover.tga
-END
-select.option.normal.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.option.normal.png
-END
-rdot.down.png
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.down.png
-END
-checkbox.on.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.on.normal.tga
-END
-select.selected.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.selected.hover.tga
-END
-dialog.close.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.normal.tga
-END
-dot.xcf
-K 25
-svn:wc:ra_dav:version-url
-V 57
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.xcf
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/rdot.hover.png
 END
 radio.on.hover.tga
 K 25
@@ -315,11 +201,125 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.on.hover.tga
 END
-notes.txt
+dot.down.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.down.png
+END
+generate.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/generate.py
+END
+dialog.close.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.close.normal.tga
+END
+box.normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.normal.png
+END
+select.options.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.options.png
+END
+dot.normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.normal.png
+END
+dialog.bar.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dialog.bar.png
+END
+radio.off.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.off.hover.tga
+END
+out.tga
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/out.tga
+END
+slider.bar.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.bar.normal.tga
+END
+input.focus.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/input.focus.png
+END
+select.option.hover.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.option.hover.png
+END
+menu.down.tga
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.down.tga
+END
+checkbox.off.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.off.normal.tga
+END
+checkbox.off.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/checkbox.off.hover.tga
+END
+x.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/x.png
+END
+slider.bar.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/slider.bar.hover.tga
+END
+radio.png
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/notes.txt
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.png
+END
+menu.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/menu.normal.tga
+END
+dot.xcf
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/dot.xcf
 END
 box.xcf
 K 25
@@ -327,33 +327,33 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/box.xcf
 END
-idot.normal.png
+radio.off.normal.tga
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.off.normal.tga
+END
+select.arrow.down.tga
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.down.tga
+END
+select.selected.hover.tga
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.selected.hover.tga
+END
+button.down.tga
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/idot.normal.png
+/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/button.down.tga
 END
 select.arrow.normal.tga
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/select.arrow.normal.tga
-END
-tool.hover.tga
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/tool.hover.tga
-END
-radio.on.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/radio.on.normal.tga
-END
-tool.normal.tga
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/!svn/ver/96/speckpater/trunk/pgu/gui/default/tool.normal.tga
 END

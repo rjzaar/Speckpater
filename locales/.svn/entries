@@ -1,12 +1,39 @@
 10
 
 dir
-132
+201
 http://svn.oblateyouth.com.au/svn/speckpater/trunk/locales
 http://svn.oblateyouth.com.au/svn
 
 
 
+2009-09-21T08:53:49.910646Z
+99
+rjzaar
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4e414c27-6499-40a2-ae1a-e1eb9f5d2518
+
+bibledave.pot
+file
+
+
+
+
+2011-04-18T04:15:26.433000Z
+89b35a205f8e99f6bf48b69568014f8d
 2009-09-21T08:53:49.910646Z
 99
 rjzaar
@@ -24,10 +51,14 @@ rjzaar
 
 
 
-4e414c27-6499-40a2-ae1a-e1eb9f5d2518
-
-en
-dir
+
+
+
+
+
+
+
+10751
 
 compileMos.bat
 file
@@ -35,7 +66,7 @@ file
 
 
 
-2009-12-04T03:52:32.000000Z
+2011-04-18T04:15:26.417000Z
 417face6212766eb4416d8b687783069
 2009-09-21T08:53:49.910646Z
 99
@@ -63,40 +94,9 @@ rjzaar
 
 169
 
-fi
+en
 dir
 
-bibledave.pot
-file
-
-
-
-
-2009-12-04T03:52:32.000000Z
-89b35a205f8e99f6bf48b69568014f8d
-2009-09-21T08:53:49.910646Z
-99
-rjzaar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10751
+fi
+dir
 

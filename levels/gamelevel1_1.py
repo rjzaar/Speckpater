@@ -22,7 +22,8 @@ They must have spilled out of the plane!
 \tI need to backtrack and search for the Bibles. The translation dedication is next week!
 \tThat gives me 5 days to find at least %d Bibles!""" % base.NEEDED_BIBLES));
 			s.agroups = None	## Remove the groups from colliding with this object in the future
-		
+		t.rect.x = 50
+		t.rect.y = 545
 		s = tilevid.Sprite(g.images['crashed_plane'],t.rect)
 		g.sprites.append(s)
 		s.agroups = g.string2groups('player')	## Set the 'player' group to collide with this object

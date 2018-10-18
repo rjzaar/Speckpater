@@ -1,7 +1,7 @@
 # ------------------- #
 #			Bible Dave Engine		 #
 # ------------------- #
-#-- Load imports --#
+#-- Load imports - -#
 try:
 	import os, sys
 	
@@ -34,10 +34,10 @@ class Main(engine.Game):
 	def init(self):
 		pygame.init()
 		
-		if '-t' in sys.argv:
-			base.Testing = True
-		else:
-			base.Testing = False #Just until I find time to fix bugs caused by this being off.
+		#if '-t' in sys.argv:
+		base.Testing = True #MAYO: set this to always be on !!!
+		#else:
+		#	base.Testing = False #Just until I find time to fix bugs caused by this being off.
 		self.timer = timer.Timer(base.FPS) #Set the max FPS
 		self.screenChanged = False
 		
@@ -66,7 +66,7 @@ class Main(engine.Game):
 		base.SOUND = True
 		self.sound = base.SOUND
 		#print base.SOUND, base.MUSIC_LOADED
-		pygame.display.set_caption("Bible Dave %s" % base.VERSION)
+		pygame.display.set_caption("Speckpater %s" % base.VERSION)
 		pygame.display.set_icon(pygame.image.load(os.path.join("images","bible.png")))
 		self.music = 1
 		base.sound = DaveSound()
@@ -77,9 +77,11 @@ class Main(engine.Game):
 		
 		gamma = float(self.settings['gamma']) #Get gama settings from settings file
 		pygame.display.set_gamma(gamma,gamma,gamma) #Set gamma
+		#MAYO
+		
 		
 		#Joystick initialization
-		if (pygame.joystick.get_count() > 0):
+		if (pygame.joystick.get_count() > 0): #Seems like there is a virtual joystick in some computer
 			print "Detected Joystick"
 			base.has_joy = True
 			base.joy = pygame.joystick.Joystick(0)
@@ -118,8 +120,8 @@ class Main(engine.Game):
 				
 
 
-if '-t' in sys.argv:
-	base.Testing = True
+#if '-t' in sys.argv:
+base.Testing = True
 
 try:
 	if base.Testing == True:

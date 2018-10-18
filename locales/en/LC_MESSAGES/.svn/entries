@@ -1,7 +1,7 @@
 10
 
 dir
-132
+201
 http://svn.oblateyouth.com.au/svn/speckpater/trunk/locales/en/LC_MESSAGES
 http://svn.oblateyouth.com.au/svn
 
@@ -12,7 +12,7 @@ http://svn.oblateyouth.com.au/svn
 rjzaar
 
 
-
+svn:special svn:externals svn:needs-lock
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2009-12-04T03:52:30.000000Z
+2011-04-18T04:15:26.245000Z
 a19d2472bed21e0f547a14d4b841a509
 2009-09-21T08:53:49.910646Z
 99
@@ -66,7 +66,7 @@ file
 
 
 
-2009-12-04T03:52:30.000000Z
+2011-04-18T04:15:26.261000Z
 9fdb39eae121044b498adeedf26b3f5e
 2009-09-21T08:53:49.910646Z
 99

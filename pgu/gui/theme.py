@@ -57,26 +57,41 @@ class Theme:
         
         #if the package isn't installed and people are just
         #trying out the scripts or examples
-        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","data","themes",name))
+#1        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","data","themes",name))
         
         #if the package is installed, and the package is installed
         #in /usr/lib/python2.3/site-packages/pgu/
         #or c:\python23\lib\site-packages\pgu\
         #the data is in ... lib/../share/ ...
-#        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","..","..","share","pgu","themes",name))
-#        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","..","..","..","share","pgu","themes",name))
+#        dnames.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","..","..","share","pgu","themes",name)))
+#        dnames.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","..","..","..","share","pgu","themes",name)))
         
 				# path for the default theme for Bible Dave
-        dnames.append(os.path.join(os.path.dirname(__file__),name))
-				
+#        dnames.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","..","pgu","gui",name)))
+#1        dnames.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","pgu","gui",name)))
+#        dnames.append(os.path.abspath(os.path.join(os.path.dirname(__file__),name)))
+
+#        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","..","pgu","gui",name))
+#        dnames.append(os.path.join(os.path.dirname(__file__),"..","..","pgu","gui",name))
+        fname=os.path.join(os.path.dirname(__file__),name)
+        dnames.append(fname)
+#        self.ferror=open(os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","..",'error.txt')), 'w')
+        self.ferror=open(os.path.join(os.path.dirname(__file__),"..","..","..",'error.txt'), 'w')
+#        print os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","..",'error.txt'))
+        	
         for dname in dnames:
-            if os.path.isdir(dname): break
-        if not os.path.isdir(dname): 
-            raise 'could not find theme '+name
-            
+        	self.ferror.write ( dname+'\n')
+        	if os.path.isdir(dname): break
+#2        if not os.path.isdir(dname): 
+#2            raise 'could not find theme '+name
+           
         fname = os.path.join(dname, "config.txt")
+        fname=fname.replace('\\main.exe','')
+
+        self.ferror.write ( fname+'\n')
         try:
             f = open(fname)
+            self.ferror.write ( 'open'+'\n')
             for line in f.readlines():
                 vals = line.strip().split()
                 if len(vals) < 3: continue
@@ -90,13 +105,22 @@ class Theme:
                 self.config[cls+":"+pcls+" "+attr] = (dname, vals)
         finally:
             f.close()
+            self.ferror.close() 
     
     is_image = re.compile('\.(gif|jpg|bmp|png|tga)$', re.I)
     def _get(self,key):
+    	self.ferror=open(os.path.join(os.path.dirname(__file__),"..","..","..",'error.txt'), 'w')
+
         if not key in self.config: return
         if key in self.dict: return self.dict[key]
         dvals = self.config[key]
         dname, vals = dvals
+        #mayo
+        fname=dname.replace('\\main.exe','')
+        self.ferror.write ( 'cool '+fname+'\n')
+        self.ferror.write ( 'cool '+dname+'\n')
+        
+        #
         #theme_dir = themes[name]
         v0 = vals[0]
         if v0[0] == '#':
@@ -104,11 +128,15 @@ class Theme:
         elif v0.endswith(".ttf") or v0.endswith(".TTF"):
             v = pygame.font.Font(os.path.join(dname, v0),int(vals[1]))
         elif self.is_image.search(v0) is not None:
+            #dname= "C:\\Rob\\MAYO\\playtime folio\\Eclipse\\workspace\\speckpater2\\dist\\pgu\\gui\\default\\"
+            #MAYO: trying to get past this next error!!!
             v = pygame.image.load(os.path.join(dname, v0))
         else:
             try: v = int(v0)
             except: v = pygame.font.SysFont(v0, int(vals[1]))
         self.dict[key] = v
+        self.ferror.close()
+        
         return v    
     
     def get(self,cls,pcls,attr):

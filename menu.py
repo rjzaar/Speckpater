@@ -30,7 +30,7 @@ class Menu(engine.State):
 			self.menu = ["continue game", "start a new game", "options", "credits", "help", "about", "quit"]
 		else:
 			self.menu = ["start a new game", "options", "credits", "help", "about", "quit"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
 		self.zones = []
@@ -60,15 +60,18 @@ class Menu(engine.State):
 		
 ##		x,y = 0,300
 		y = 250
-		fg = (0xaa,0x00,0x00)
+		
+		fg = (0x00,0xaa,0x00)
 		score = 0
 		
 		self.zones = []
 		n = 0
 		for val in self.menu:
-			c = 0,150,100
+			#mayo: below starting with C=, is where colour change from main , new game, continue etc
+			c = 119,90,254
+			#mayo: below starting with C=, is colour for roll over of main , new game, continue, etc
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt.render(val,1,c)
 			img2 = fnt.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -83,7 +86,7 @@ class Menu(engine.State):
 		c = 49, 165, 23
 		for line in ["This game comes with ABSOLUTELY NO WARRANTY. It is free software and",
 		"you are welcome to distribute it under the terms of the GNU General Public License.",
-		"(C) The Bible Dave Development Team"]:
+		"(C) MAYO Development Team"]:
 			img = fnt.render(line,1,c)
 			img2 = fnt.render(line,1,bg)
 ##			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -96,10 +99,10 @@ class Menu(engine.State):
 		fnt = pygame.font.Font("BD_Cartoon_Shout.ttf",10)
 		x,y = 405,10
 ##		c = 36, 45, 126
-		c = 85,85,85
+		c = 0,36,0
 		bg = 0,0,0
 		
-		info = "Bible Dave - Christian Coders Community project v%s" % base.VERSION
+		info = "Speckpater - MAYO with thanks to the Christian Coders Community project v%s" % base.VERSION
 		img = fnt.render(info,1,c)
 		img2 = fnt.render(info,1,bg)
 		screen.blit(img2,(x+1,y+1))
@@ -174,7 +177,7 @@ class Intro(engine.State):
 	def init(self):
 		pygame.mouse.set_visible(False)
 		self.quit = False
-		self.logo = pygame.image.load(os.path.join("images","ccnlogofull.gif")).convert()
+		self.logo = pygame.image.load(os.path.join("images","speck-splash4.gif")).convert()
 		
 	def paint(self,screen):
 		#x = base.SCREEN_WIDTH/2
@@ -212,7 +215,7 @@ class Options(engine.State):
 		self.quit = False
 		self.cur = 0
 		self.menu = ["fullscreen/windowed mode", "sounds and music on/off", "", "back"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
@@ -238,9 +241,9 @@ class Options(engine.State):
 		self.zones = []
 		n = 0
 		for val in self.menu:
-			c = 0,150,100
+			c = 119,90,254
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt.render(val,1,c)
 			img2 = fnt.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -255,7 +258,7 @@ class Options(engine.State):
 		c = 49, 165, 23
 		for line in ["This game comes with ABSOLUTELY NO WARRANTY. It is free software and",
 		"you are welcome to distribute it under the terms of the GNU General Public License.",
-		"(C) The Bible Dave Development Team"]:
+		"(C) MAYO Development Team"]:
 			img = fnt.render(line,1,c)
 			img2 = fnt.render(line,1,bg)
 ##			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -271,7 +274,7 @@ class Options(engine.State):
 		c = 85,85,85
 		bg = 0,0,0
 		
-		info = "Bible Dave - Christian Coders Community project v%s" % base.VERSION
+		info = "Speckpater - MAYO with thanks to the Christian Coders Community project v%s" % base.VERSION
 		img = fnt.render(info,1,c)
 		img2 = fnt.render(info,1,bg)
 		screen.blit(img2,(x+1,y+1))
@@ -332,7 +335,7 @@ class Options(engine.State):
 				pygame.display.quit()
 				pygame.display.init()
 				
-				pygame.display.set_caption("Bible Dave %s" % base.VERSION)
+				pygame.display.set_caption("Speckpater %s" % base.VERSION)
 				pygame.display.set_icon(pygame.image.load(os.path.join("images","dave_jump_right.png")))
 				
 				screenMode = base.getFullScreenFlag(self.main.settings)
@@ -353,7 +356,7 @@ class SetDifficulty(engine.State):
 		self.quit = False
 		self.cur = 0
 		self.menu = ["easy", "medium", "hard", "", "back"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
@@ -379,9 +382,9 @@ class SetDifficulty(engine.State):
 		self.zones = []
 		n = 0
 		for val in self.menu:
-			c = 0,150,100
+			c = 119,90,254
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt.render(val,1,c)
 			img2 = fnt.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -396,7 +399,7 @@ class SetDifficulty(engine.State):
 		c = 49, 165, 23
 		for line in ["This game comes with ABSOLUTELY NO WARRANTY. It is free software and",
 		"you are welcome to distribute it under the terms of the GNU General Public License.",
-		"(C) The Bible Dave Development Team"]:
+		"(C) MAYO Development Team"]:
 			img = fnt.render(line,1,c)
 			img2 = fnt.render(line,1,bg)
 ##			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -412,7 +415,7 @@ class SetDifficulty(engine.State):
 		c = 85,85,85
 		bg = 0,0,0
 		
-		info = "Bible Dave - Christian Coders Community project v%s" % base.VERSION
+		info = "Speckpater - MAYO with thanks to the Christian Coders Community project v%s" % base.VERSION
 		img = fnt.render(info,1,c)
 		img2 = fnt.render(info,1,bg)
 		screen.blit(img2,(x+1,y+1))
@@ -495,9 +498,24 @@ class About(engine.State):
 		self.quit = False
 		self.cur = 0
 		self.menu = ["", "back"]
-		self.aboutInfo = ["Bible Dave - A Christian Coders Community project v%s" % base.VERSION, "All code and images (C) Bible Dave Development Team", "Released under the GNU General Public License v2 (See GPL-License.txt)", "",
-		"Bible Dave uses Phil's Pygame Utilities (PGU) and Pygame", "which are released under the GNU LGPL v2.1 (See LGPL-License.txt)"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.aboutInfo = ["Speckpater (The Bacon Priest) is a Project of MAYO", 
+						  "(Mission Action Youth Organisation).",
+						  "To find out more about MAYO see mayostudios.org",
+						  "Speckpater is heavily based on Bible Dave", 
+						  "which is an opensource computer game.",
+						  "Opensource games allow others to freely copy, modify",
+						  "and redistribute the game.",
+						  "We also licence this game as opensource (GPLv3) so others can copy,", 
+						  "modify and redistribute the game.",
+						  "",
+						  "Here is the original copyright/about information",
+						   "Bible Dave - A Christian Coders Community project v%s" % base.VERSION, 
+						   "All code and images (C) Bible Dave Development Team", 
+						   "Released under the GNU General Public License v2 (See GPL-License.txt)", 
+						   "",
+						   "Bible Dave uses Phil's Pygame Utilities (PGU) and Pygame", 
+							"which are released under the GNU LGPL v2.1 (See LGPL-License.txt)"]
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
@@ -535,9 +553,9 @@ class About(engine.State):
 		
 		y1 = y + 30	
 		for val in self.menu:
-			c = 0,150,100
+			c = 119,90,254
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt2.render(val,1,c)
 			img2 = fnt2.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -619,20 +637,26 @@ class Credits(engine.State):
 		self.quit = False
 		self.cur = 0
 		self.menu = ["", "main menu"]
-		self.credits = ["Programming:", "Clint Herron (HanClinto)", "Joseph Quigley (CPUFreak91)", "Jari", "Vincent van Beveren", "HeardTheWord", 
+		self.credits = ["The Mayo Team/speckpator team", 
+	
+	"Mr.Robert Zaar, Nicholas Munro, Kevin Doss", "Aidan Bui, Adeyn Dixon-Mason, Gabriel Hunyh", 				    
+	"", 				    
+	"The Bible dave/chiristian coders team",
+	""
+	"Programming: Clint Herron (HanClinto), Joseph Quigley (CPUFreak91), Jari",  "Vincent van Beveren, HeardTheWord", 
 	"",
-	"Art/Graphics:", "Lava", "Vincent van Beveren", "Neil (Lotus)", "Kiwee -- Conceptual Artist",
+	"Art/Graphics: Lava, Vincent van Beveren", "Neil (Lotus)", "Kiwee -- Conceptual Artist",
 	"",
 	"Sound Effects:", "fingolfin",  "Clint Herron (HanClinto)",
 	"",
 	"Music: Jeff McArthur, Andy Salazar, Penny (www.helpfulinventions.com)"
 	"",
-	"",
+
 	"The rest:",
 	"Realm Master -- Conceptual Writer", "buddboy -- Web Site Designer", "firemaker103 -- Web Site Designer", "Darryl Dixon -- Packager and game distribution",
 	"",
 	"Also special thanks to the", "Christian Coder's Network Community for their support", "and to SourceForge.net for hosting"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
@@ -670,9 +694,9 @@ class Credits(engine.State):
 		
 		y1 = y + 30	
 		for val in self.menu:
-			c = 0,150,100
+			c = 119,90,254
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt2.render(val,1,c)
 			img2 = fnt2.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
@@ -756,7 +780,7 @@ class Help(engine.State):
 		self.menu = ["", "back"]
 		self.helpInfo = ["Controls:", 
 		"Jump -- Space", "Walk left -- Left arrow", "Walk right -- Right arrow", "Grab hold of and climb up vine -- Up arrow", "Climb down vine -- Down arrow", "View message -- M key", "Throw banana -- T"]
-		self.bkgr = pygame.image.load(os.path.join("images","bibledave.png")).convert()
+		self.bkgr = pygame.image.load(os.path.join("images","speckpater_front.png")).convert()
 		
 		self.sourceforgeLogo = pygame.image.load(os.path.join("images","sflogo.png")).convert()
 		self.pythonLogo = pygame.image.load(os.path.join("images","PythonPowered.gif")).convert()
@@ -794,9 +818,9 @@ class Help(engine.State):
 			
 		y += 30
 		for val in self.menu:
-			c = 0,150,100
+			c = 119,90,254
 			if n == self.cur: 
-				c = 250,250,250
+				c = 63,185,0
 			img = fnt2.render(val,1,c)
 			img2 = fnt2.render(val,1,bg)
 			x = (base.SCREEN_WIDTH-img.get_width())/2
