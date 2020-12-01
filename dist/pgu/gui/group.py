@@ -1,7 +1,9 @@
 """
 """
-from const import *
-import widget
+from __future__ import absolute_import
+from .const import *
+from . import widget
+
 
 class Group(widget.Widget):
     """An object for grouping together Form elements.
@@ -19,24 +21,24 @@ class Group(widget.Widget):
     Although note, that when the value is a list, it may have to be sent by hand via
     <tt>g.send(gui.CHANGE)</tt></p>
     """
-    
-    def __init__(self,name=None,value=None):
-        widget.Widget.__init__(self,name=name,value=value)
+
+    def __init__(self, name=None, value=None):
+        widget.Widget.__init__(self, name=name, value=value)
         self.widgets = []
-    
-    def add(self,w):
+
+    def add(self, w):
         """Add a widget to this group.
         
         <pre>Group.add(w)</pre>
         """
         self.widgets.append(w)
-    
-    def __setattr__(self,k,v):
-        _v = self.__dict__.get(k,NOATTR)
+
+    def __setattr__(self, k, v):
+        _v = self.__dict__.get(k, NOATTR)
         self.__dict__[k] = v
         if k == 'value' and _v != NOATTR and _v != v:
             self._change()
-    
+
     def _change(self):
         self.send(CHANGE)
         for w in self.widgets:

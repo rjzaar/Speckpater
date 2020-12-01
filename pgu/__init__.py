@@ -1,7 +1,7 @@
-"""Phil's pyGame Utilities
+"""PGU is a collection of modules for writing games with PyGame.
 
+* gui - A module for creating widget-based interfaces
 
 """
-__version__ = '0.10.3'
 
-# vim: set filetype=python sts=4 sw=4 noet si :
+__version__ = '0.21'

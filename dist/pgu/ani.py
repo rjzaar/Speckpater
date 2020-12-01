@@ -3,26 +3,33 @@
 <p>please note that this file is alpha, and is subject to modification in
 future versions of pgu!</p>
 """
+from __future__ import division
+from __future__ import print_function
 
-print 'pgu.ani','This module is alpha, and is subject to change.'
+from builtins import range
+from past.utils import old_div
+
+print('pgu.ani', 'This module is alpha, and is subject to change.')
 
 import math
 import pygame
 
-def _ani_load(tv,name,parts,frames,shape):
+
+def _ani_load(tv, name, parts, frames, shape):
     l = len(frames)
-    #print name,parts,l
+    # print name,parts,l
     n = parts.pop()
     if len(parts):
-        s = l/n
-        for i in xrange(0,n):
-            _ani_load(tv,name + ".%d"%i,parts[:],frames[s*i:s*(i+1)],shape)
+        s = old_div(l, n)
+        for i in range(0, n):
+            _ani_load(tv, name + ".%d" % i, parts[:], frames[s * i:s * (i + 1)], shape)
         return
-    
-    for i in xrange(0,n):
-        tv.images[name+".%d"%i] = frames[i],shape
 
-def ani_load(tv,name,img,size,shape,parts):
+    for i in range(0, n):
+        tv.images[name + ".%d" % i] = frames[i], shape
+
+
+def ani_load(tv, name, img, size, shape, parts):
     """load an animation from an image
     
     <pre>ani_load(tv,name,image,size,shape,parts)</pre>
@@ -41,15 +48,15 @@ def ani_load(tv,name,img,size,shape,parts):
     """
     parts = parts[:]
     parts.reverse()
-    w,h = size
+    w, h = size
     frames = []
-    for y in xrange(0,img.get_height(),h):
-        for x in xrange(0,img.get_width(),w):
-            frames.append(img.subsurface(x,y,w,h))
-    _ani_load(tv,name,parts,frames,shape)
-    
-    
-def image_rotate(tv,name,img,shape,angles,diff=0):
+    for y in range(0, img.get_height(), h):
+        for x in range(0, img.get_width(), w):
+            frames.append(img.subsurface(x, y, w, h))
+    _ani_load(tv, name, parts, frames, shape)
+
+
+def image_rotate(tv, name, img, shape, angles, diff=0):
     """rotate an image and put it into tv.images
     
     <pre>image_rotate(tv,name,image,shape,angles,diff=0)</pre>
@@ -63,28 +70,26 @@ def image_rotate(tv,name,img,shape,angles,diff=0):
     <dt>diff <dd>a number to add to the angles, to correct for source image not actually being at 0 degrees
     </dl>
     """
-    w1,h1 = img.get_width(),img.get_height()
+    w1, h1 = img.get_width(), img.get_height()
     shape = pygame.Rect(shape)
-    ps = shape.topleft,shape.topright,shape.bottomleft,shape.bottomright
+    ps = shape.topleft, shape.topright, shape.bottomleft, shape.bottomright
     for a in angles:
-        img2 = pygame.transform.rotate(img,a+diff)
-        w2,h2 = img2.get_width(),img2.get_height()
-        minx,miny,maxx,maxy = 1024,1024,0,0
-        for x,y in ps:
-            x,y = x-w1/2,y-h1/2
-            a2 = math.radians(a+diff)
-            #NOTE: the + and - are switched from the normal formula because of
-            #the weird way that pygame does the angle...
-            x2 = x*math.cos(a2) + y*math.sin(a2) 
-            y2 = y*math.cos(a2) - x*math.sin(a2)
-            x2,y2 = x2+w2/2,y2+h2/2
-            minx = min(minx,x2)
-            miny = min(miny,y2)
-            maxx = max(maxx,x2)
-            maxy = max(maxy,y2)
-        r = pygame.Rect(minx,miny,maxx-minx,maxy-miny)
-        #print r
-        #((ww-w)/2,(hh-h)/2,w,h)
-        tv.images["%s.%d"%(name,a)] = img2,r
-        
-
+        img2 = pygame.transform.rotate(img, a + diff)
+        w2, h2 = img2.get_width(), img2.get_height()
+        minx, miny, maxx, maxy = 1024, 1024, 0, 0
+        for x, y in ps:
+            x, y = x - old_div(w1, 2), y - old_div(h1, 2)
+            a2 = math.radians(a + diff)
+            # NOTE: the + and - are switched from the normal formula because of
+            # the weird way that pygame does the angle...
+            x2 = x * math.cos(a2) + y * math.sin(a2)
+            y2 = y * math.cos(a2) - x * math.sin(a2)
+            x2, y2 = x2 + old_div(w2, 2), y2 + old_div(h2, 2)
+            minx = min(minx, x2)
+            miny = min(miny, y2)
+            maxx = max(maxx, x2)
+            maxy = max(maxy, y2)
+        r = pygame.Rect(minx, miny, maxx - minx, maxy - miny)
+        # print r
+        # ((ww-w)/2,(hh-h)/2,w,h)
+        tv.images["%s.%d" % (name, a)] = img2, r

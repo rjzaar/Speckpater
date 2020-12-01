@@ -1,10 +1,12 @@
 """These widgets are all grouped together because they are non-interactive widgets.
 """
+from __future__ import absolute_import
 
 import pygame
 
-from const import *
-import widget
+from .const import *
+from . import widget
+
 
 class Spacer(widget.Widget):
     """A invisible space.
@@ -12,10 +14,11 @@ class Spacer(widget.Widget):
     <pre>Spacer(width,height)</pre>
     
     """
-    def __init__(self,width,height,**params):
-        params.setdefault('focusable',False)
-        widget.Widget.__init__(self,width=width,height=height,**params)
-        
+
+    def __init__(self, width, height, **params):
+        params.setdefault('focusable', False)
+        widget.Widget.__init__(self, width=width, height=height, **params)
+
 
 class Color(widget.Widget):
     """A block of color.
@@ -31,23 +34,23 @@ class Color(widget.Widget):
     c.value = (0,255,0)
     </code>
     """
-    
-    
-    def __init__(self,value=None,**params):
-        params.setdefault('focusable',False)
-        if value != None: params['value']=value
-        widget.Widget.__init__(self,**params)
-    
-    def paint(self,s):
-        if hasattr(self,'value'): s.fill(self.value)
-    
-    def __setattr__(self,k,v):
+
+    def __init__(self, value=None, **params):
+        params.setdefault('focusable', False)
+        if value != None: params['value'] = value
+        widget.Widget.__init__(self, **params)
+
+    def paint(self, s):
+        if hasattr(self, 'value'): s.fill(self.value)
+
+    def __setattr__(self, k, v):
         if k == 'value' and type(v) == str: v = pygame.Color(v)
-        _v = self.__dict__.get(k,NOATTR)
-        self.__dict__[k]=v
-        if k == 'value' and _v != NOATTR and _v != v: 
+        _v = self.__dict__.get(k, NOATTR)
+        self.__dict__[k] = v
+        if k == 'value' and _v != NOATTR and _v != v:
             self.send(CHANGE)
             self.repaint()
+
 
 class Label(widget.Widget):
     """A text label.
@@ -65,16 +68,18 @@ class Label(widget.Widget):
     w = Label("3 rubber chickens")
     </code>
     """
-    def __init__(self,value,**params):
-        params.setdefault('focusable',False)
-        params.setdefault('cls','label')
-        widget.Widget.__init__(self,**params)
+
+    def __init__(self, value, **params):
+        params.setdefault('focusable', False)
+        params.setdefault('cls', 'label')
+        widget.Widget.__init__(self, **params)
         self.value = value
         self.font = self.style.font
         self.style.width, self.style.height = self.font.size(self.value)
-    
-    def paint(self,s):
-        s.blit(self.font.render(self.value, 1, self.style.color),(0,0))
+
+    def paint(self, s):
+        s.blit(self.font.render(self.value, 1, self.style.color), (0, 0))
+
 
 class Image(widget.Widget):
     """An image.
@@ -86,13 +91,14 @@ class Image(widget.Widget):
     </dl>
     
     """
-    def __init__(self,value,**params):
-        params.setdefault('focusable',False)
-        widget.Widget.__init__(self,**params)
+
+    def __init__(self, value, **params):
+        params.setdefault('focusable', False)
+        widget.Widget.__init__(self, **params)
         if type(value) == str: value = pygame.image.load(value)
         self.value = value
         self.style.width = self.value.get_width()
         self.style.height = self.value.get_height()
-    
-    def paint(self,s):
-        s.blit(self.value,(0,0))
+
+    def paint(self, s):
+        s.blit(self.value, (0, 0))

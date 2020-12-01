@@ -1,5 +1,0 @@
-default
-C:\Rob\MAYO\playtime folio\Eclipse\workspace\speckpater2\pgu\gui\..\..\data\themes\default
-C:\Rob\MAYO\playtime folio\Eclipse\workspace\speckpater2\pgu\gui\..\..\..\..\share\pgu\themes\default
-C:\Rob\MAYO\playtime folio\Eclipse\workspace\speckpater2\pgu\gui\..\..\..\..\..\share\pgu\themes\default
-C:\Rob\MAYO\playtime folio\Eclipse\workspace\speckpater2\pgu\gui\default

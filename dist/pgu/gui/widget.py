@@ -1,10 +1,14 @@
 """
 """
+from __future__ import print_function
+from __future__ import absolute_import
+from builtins import object
 import pygame
 
-import style
+from . import style
 
-class Widget:
+
+class Widget(object):
     """Template object - base for all widgets.
     
     <pre>Widget(**params)</pre>
@@ -45,72 +49,76 @@ class Widget:
             return 256,256
     </code>
     """
-    
-    def __init__(self,**params): 
-        #object.Object.__init__(self) 
+
+    def __init__(self, **params):
+        # object.Object.__init__(self)
         self.connects = {}
-        params.setdefault('decorate',True)
-        params.setdefault('style',{})
-        params.setdefault('focusable',True)
-        params.setdefault('disabled',False)
-        
+        params.setdefault('decorate', True)
+        params.setdefault('style', {})
+        params.setdefault('focusable', True)
+        params.setdefault('disabled', False)
+
         self.focusable = params['focusable']
         self.disabled = params['disabled']
-        
-        self.rect = pygame.Rect(params.get('x',0),params.get('y',0),params.get('width',0),params.get('height',0))
-        
+
+        self.rect = pygame.Rect(params.get('x', 0), params.get('y', 0), params.get('width', 0), params.get('height', 0))
+
         s = params['style']
-        #some of this is a bit "theme-ish" but it is very handy, so these
-        #things don't have to be put directly into the style.
-        for att in ('align','valign','x','y','width','height','color','font','background'):
+        # some of this is a bit "theme-ish" but it is very handy, so these
+        # things don't have to be put directly into the style.
+        for att in ('align', 'valign', 'x', 'y', 'width', 'height', 'color', 'font', 'background'):
             if att in params: s[att] = params[att]
-        self.style = style.Style(self,s)
-        
+        self.style = style.Style(self, s)
+
         self.cls = 'default'
         if 'cls' in params: self.cls = params['cls']
-        if 'name' in params:    
-            import form
+        if 'name' in params:
+            from . import form
             self.name = params['name']
-            if hasattr(form.Form,'form') and form.Form.form != None: 
+            if hasattr(form.Form, 'form') and form.Form.form != None:
                 form.Form.form.add(self)
                 self.form = form.Form.form
         if 'value' in params: self.value = params['value']
         self.pcls = ""
-        
+
         if params['decorate'] != False:
-            import app
-            if not hasattr(app.App,'app'):
-                print 'gui.widget: creating an App'
+            from . import app
+            if not hasattr(app.App, 'app'):
+                print('gui.widget: creating an App')
                 app.App.app = app.App()
-            app.App.app.theme.decorate(self,params['decorate'])
-    
+            app.App.app.theme.decorate(self, params['decorate'])
+
     def focus(self):
         """Focus this Widget.
         
         <pre>Widget.focus()</pre>
         """
-        if getattr(self,'container',None) != None: 
+        if getattr(self, 'container', None) != None:
             if self.container.myfocus != self:  ## by Gal Koren
                 self.container.focus(self)
-    def blur(self): 
+
+    def blur(self):
         """Blur this Widget.
         
         <pre>Widget.blur()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.blur(self)
+        if getattr(self, 'container', None) != None: self.container.blur(self)
+
     def open(self):
         """Open this Widget as a modal dialog.
         
         <pre>Widget.open()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.open(self)
-    def close(self): 
+        if getattr(self, 'container', None) != None: self.container.open(self)
+
+    def close(self):
         """Close this Widget (if it is a modal dialog.)
         
         <pre>Widget.close()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.close(self)
-    def resize(self,width=None,height=None):
+        if getattr(self, 'container', None) != None: self.container.close(self)
+
+    def resize(self, width=None, height=None):
         """Template method - return the size and width of this widget.
 
         <p>Responsible for also resizing all sub-widgets.</p>
@@ -125,6 +133,7 @@ class Widget:
         <p>If not overridden, will return self.style.width, self.style.height</p>
         """
         return self.style.width, self.style.height
+
     def chsize(self):
         """Change the size of this widget.
         
@@ -133,23 +142,22 @@ class Widget:
         
         <pre>Widget.chsize()</pre>
         """
-        if not hasattr(self,'container'): return
-        import app
-        if hasattr(app.App,'app'):
+        if not hasattr(self, 'container'): return
+        from . import app
+        if hasattr(app.App, 'app'):
             if app.App.app._chsize: return
             app.App.app.chsize()
             return
-            
-        #if hasattr(app.App,'app'):
+
+        # if hasattr(app.App,'app'):
         #    w,h = self.rect.w,self.rect.h
         #    w2,h2 = self.resize()
         #    if w2 != w or h2 != h:
         #        app.App.app.chsize()
         #    else: 
         #        self.repaint()
-        
 
-    def update(self,s):
+    def update(self, s):
         """Template method - update the surface
         
         <pre>Widget.update(s): return list of pygame.Rect(s)</pre>
@@ -161,8 +169,8 @@ class Widget:
         <p>return - a list of the updated areas as pygame.Rect(s).</p>
         """
         return
-        
-    def paint(self,s):
+
+    def paint(self, s):
         """Template method - paint the surface
         
         <pre>Widget.paint(s)</pre>
@@ -173,56 +181,60 @@ class Widget:
         """
         return
 
-    def repaint(self): 
+    def repaint(self):
         """Request a repaint of this Widget.
         
         <pre>Widget.repaint()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.repaint(self)
+        if getattr(self, 'container', None) != None: self.container.repaint(self)
+
     def repaintall(self):
         """Request a repaint of all Widgets.
         
         <pre>Widget.repaintall()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.repaintall()
-    def reupdate(self): 
+        if getattr(self, 'container', None) != None: self.container.repaintall()
+
+    def reupdate(self):
         """Request a reupdate of this Widget
         
         <pre>Widget.reupdate()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.reupdate(self)
-    def next(self): 
+        if getattr(self, 'container', None) != None: self.container.reupdate(self)
+
+    def __next__(self):
         """Pass focus to next Widget.
         
         <p>Widget order determined by the order they were added to their container.</p>
         
         <pre>Widget.next()</pre>
         """
-        if getattr(self,'container',None) != None: self.container.next(self)
-    def previous(self): 
+        if getattr(self, 'container', None) != None: self.container.next(self)
+
+    def previous(self):
         """Pass focus to previous Widget.
         
         <p>Widget order determined by the order they were added to their container.</p>
         
         <pre>Widget.previous()</pre>
         """
-        
-        if getattr(self,'container',None) != None: self.container.previous(self)
-    
+
+        if getattr(self, 'container', None) != None: self.container.previous(self)
+
     def get_abs_rect(self):
         """Get the absolute rect of this widget on the App screen
         
         <pre>Widget.get_abs_rect(): return pygame.Rect</pre>
         """
         x, y = self.rect[:2]
-        c = getattr(self,'container',None)
+        c = getattr(self, 'container', None)
         while c:
             x += c.rect[0]
             y += c.rect[1]
-            c = getattr(c,'container',None)
+            c = getattr(c, 'container', None)
         return pygame.Rect(x, y, self.rect.w, self.rect.h)
 
-    def connect(self,code,fnc,*values):
+    def connect(self, code, fnc, *values):
         """Connect a event code to a callback function.
         
         <p>There may only be one callback per event code.</p>
@@ -249,10 +261,10 @@ class Widget:
         w.connect(gui.CLICK,onclick,'PGU Button Clicked')
         </code>
         """
-        
-        self.connects[code] = {'fnc':fnc,'values':values}
-    
-    def send(self,code,event=None):
+
+        self.connects[code] = {'fnc': fnc, 'values': values}
+
+    def send(self, code, event=None):
         """Send a code, event callback trigger.
         
         <pre>Object.send(code,event=None)</pre>
@@ -264,19 +276,19 @@ class Widget:
         """
         if code in self.connects:
             con = self.connects[code]
-            #con['fnc'](*con['values'])
-        
+            # con['fnc'](*con['values'])
+
             fnc = con['fnc']
             values = list(con['values'])
-            
-            nargs = fnc.func_code.co_argcount
-            names = list(fnc.func_code.co_varnames)[:nargs]
-            if hasattr(fnc,'im_class'): names.pop(0)
-            
+
+            nargs = fnc.__code__.co_argcount
+            names = list(fnc.__code__.co_varnames)[:nargs]
+            if hasattr(fnc, 'im_class'): names.pop(0)
+
             args = []
-            magic = {'_event':event,'_code':code,'_widget':self}
+            magic = {'_event': event, '_code': code, '_widget': self}
             for name in names:
-                if name in magic.keys():
+                if name in list(magic.keys()):
                     args.append(magic[name])
                 elif len(values):
                     args.append(values.pop(0))
@@ -284,22 +296,22 @@ class Widget:
                     break
             args.extend(values)
             fnc(*args)
-    
-    def _event(self,e):
+
+    def _event(self, e):
         if self.disabled: return
-        self.send(e.type,e)
+        self.send(e.type, e)
         self.event(e)
         return
-        import app
-        if hasattr(app.App,'app'):
-            app.App.app.events.append((self,e))
-        
-    def event(self,e):
+        from . import app
+        if hasattr(app.App, 'app'):
+            app.App.app.events.append((self, e))
+
+    def event(self, e):
         """Template method - called when an event is passed to this object.
         
         <dl>
         <dt>e<dd>event
         </dl>
         """
-        
+
         return
