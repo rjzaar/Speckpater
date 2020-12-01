@@ -77,8 +77,9 @@ class Main(engine.Game):
             self.settings['bpp']))  # Get bits per pixel (colour depth) mode from settings file and set it
         base.enableSounds(int(self.settings['sounds']))  # Get sounds from the settings file and enable them
 
-        gamma = float(self.settings['gamma'])  # Get gama settings from settings file
-        pygame.display.set_gamma(gamma, gamma, gamma)  # Set gamma
+        # FIXME: Disable set gamma, which causes the screen becomes yellowish
+        #gamma = float(self.settings['gamma'])  # Get gama settings from settings file
+        #pygame.display.set_gamma(gamma, gamma, gamma)  # Set gamma
         # MAYO
 
         # Joystick initialization
@@ -96,11 +97,11 @@ class Main(engine.Game):
         self.timer.tick()
 
     def event(self, e):
-        if e.type is QUIT:
+        if e.type == QUIT:
             self.state = engine.Quit(self)
             return 1
 
-        if e.type is KEYDOWN:
+        if e.type == KEYDOWN:
             if e.key == K_F2:
                 if base.SOUND:
                     pygame.mixer.quit()

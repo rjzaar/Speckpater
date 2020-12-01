@@ -15,7 +15,7 @@ def loadLevelFile(filename):
     f = None
     fn = os.path.join('levels', filename + ".lev")
     try:
-        f = file(fn)
+        f = open(fn)
     except IOError:
         raise base.ResourceException("Cannot load level file \"" + fn + "\"")
     lines = f.readlines()
@@ -40,7 +40,7 @@ def saveLevelFile(filename, data):
                         REQUIRED_FIELDS,
                         "When save data has these fields:", data)
 
-    f = file(os.path.join('levels', filename + ".lev"), "w")
+    f = open(os.path.join('levels', filename + ".lev"), "w")
     for d in data:
         f.write(d + "\n")
     f.close()

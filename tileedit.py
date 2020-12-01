@@ -172,7 +172,7 @@ class _app(gui.Container):
             if hasattr(self, 'tpreview'): self.tpreview.repaint()
 
     def event(self, e):
-        if e.type is KEYDOWN:
+        if e.type == KEYDOWN:
             for key, cmd, value in keys:
                 if e.key == key:
                     cmd(value)
@@ -204,8 +204,8 @@ class cpicker(gui.Widget):
         s.blit(pygame.transform.scale(self.palette, (self.rect.w, self.rect.h)), (0, 0))
 
     def event(self, e):
-        if (e.type is MOUSEBUTTONDOWN) or (
-                e.type is MOUSEMOTION and e.buttons[0] == 1 and self.container.myfocus == self):
+        if (e.type == MOUSEBUTTONDOWN) or (
+                e.type == MOUSEMOTION and e.buttons[0] == 1 and self.container.myfocus == self):
             x, y = old_div(e.pos[0] * self.palette_w, self.rect.w), old_div(e.pos[1] * self.palette_h, self.rect.h)
             x, y = max(0, x), max(0, y)
             x, y = min(self.palette_w - 1, x), min(self.palette_h - 1, y)
@@ -234,13 +234,13 @@ class tpicker(gui.Widget):
         app.tile = app.tiles.subsurface((x, y, app.tile_w, app.tile_h))
 
     def event(self, e):
-        if (e.type is MOUSEBUTTONDOWN and e.button == 1) or (
-                e.type is MOUSEMOTION and e.buttons[0] == 1 and self.container.myfocus == self):
+        if (e.type == MOUSEBUTTONDOWN and e.button == 1) or (
+                e.type == MOUSEMOTION and e.buttons[0] == 1 and self.container.myfocus == self):
             x, y = old_div(e.pos[0], app.tile_w) * app.tile_w, old_div(e.pos[1], app.tile_h) * app.tile_h
             self.pick((x, y))
 
-        if (e.type is MOUSEBUTTONDOWN and e.button == 3) or (
-                e.type is MOUSEMOTION and e.buttons[2] == 1 and self.container.myfocus == self):
+        if (e.type == MOUSEBUTTONDOWN and e.button == 3) or (
+                e.type == MOUSEMOTION and e.buttons[2] == 1 and self.container.myfocus == self):
             x, y = e.pos[0] - old_div(app.tile_w, 2), e.pos[1] - old_div(app.tile_h, 2)
             x = min(self.rect.w - app.tile_w - 1, max(0, x))
             y = min(self.rect.h - app.tile_h - 1, max(0, y))
@@ -308,16 +308,16 @@ class tdraw(gui.Widget):
                               old_div(r.w * self.rect.w, app.tile_w), old_div(r.h * self.rect.h, app.tile_h)), 4)
 
     def event(self, e):
-        if (e.type is MOUSEBUTTONDOWN and e.button == 3) or (
-                e.type is MOUSEMOTION and e.buttons[2] == 1 and self.container.myfocus == self):
+        if (e.type == MOUSEBUTTONDOWN and e.button == 3) or (
+                e.type == MOUSEMOTION and e.buttons[2] == 1 and self.container.myfocus == self):
             self.picker_down(e)
-        if e.type is MOUSEBUTTONDOWN and e.button == 1:
+        if e.type == MOUSEBUTTONDOWN and e.button == 1:
             a = '%s_down' % app.mode
             if hasattr(self, a): getattr(self, a)(e)
-        if e.type is MOUSEMOTION and e.buttons[0] and self.container.myfocus == self:
+        if e.type == MOUSEMOTION and e.buttons[0] and self.container.myfocus == self:
             a = '%s_drag' % app.mode
             if hasattr(self, a): getattr(self, a)(e)
-        if e.type is MOUSEBUTTONUP and e.button == 1:
+        if e.type == MOUSEBUTTONUP and e.button == 1:
             a = '%s_up' % app.mode
             if hasattr(self, a): getattr(self, a)(e)
 
@@ -1065,18 +1065,18 @@ class NewDialog(gui.Dialog):
         <tr><td align=right>Width: <td><input type='text' size='4' value='%(width)s' name='width'>
         <tr><td align=right>Height: <td><input type='text' size='4' value='%(height)s' name='height'>
         </table>
-        
+
         <td colspan='1' align='center'><table>
         <tr><td align=right>Width: <td><input type='text' size='4' value='%(tile_w)s' name='tile_w'>
         <tr><td align=right>Height: <td><input type='text' size='4' value='%(tile_h)s' name='tile_h'>
         </table>
-        
+
         <tr><td colspan=2>Palette: <input type='text' size=20 name='palette' value='%(palette)s'>
-        
+
         <tr><td>&nbsp;
-        
+
         <tr><td colspan=2><input type='button' value='Okay' onclick='dialog.send(gui.CHANGE)'> <input type='button' value='Cancel' onclick='dialog.close()'>
-        
+
         </table>""" % ini_to_dict('None'))
         gui.Dialog.__init__(self, title, doc)
 
@@ -1089,15 +1089,15 @@ class SaveAsDialog(gui.Dialog):
 
         doc = html.HTML(globals={'gui': gui, 'dialog': self}, data="""
         <form id='form'>
-        
+
         <table>
-        
+
         <tr><td colspan=2>File Name: <input type='file' size=20 name='fname' value=''>
-        
+
         <tr><td>&nbsp;
-        
+
         <tr><td colspan=2><input type='button' value='Okay' onclick='dialog.send(gui.CHANGE)'> <input type='button' value='Cancel' onclick='dialog.close()'>
-        
+
         </table>""")
         gui.Dialog.__init__(self, title, doc)
 
@@ -1116,17 +1116,17 @@ class OpenDialog(gui.Dialog):
                     form[k].value = v
 
         doc = html.HTML(globals={'load_vals': load_vals, 'ini': ini, 'gui': gui, 'dialog': self}, data="""<form id='form'><table>
-        
+
         <tr><td align=right>File Name:&nbsp;<td  align=left><input type='file' size=20 name='fname' value='' onchange='load_vals(self.value,form)'>
         <tr><td align=right>Tile Width:&nbsp;<td align=left><input type='text' size='4' value='%(tile_w)s' name='tile_w'>
         <tr><td align=right>Tile Height:&nbsp;<td align=left><input type='text' size='4' value='%(tile_h)s' name='tile_h'>
-        
+
         <tr><td align=right>Palette:&nbsp;<td align=left><input type='text' size=20 name='palette' value='%(palette)s'>
-        
+
         <tr><td>&nbsp;
-        
+
         <tr><td colspan=2><input type='button' value='Okay' onclick='dialog.send(gui.CHANGE)'> <input type='button' value='Cancel' onclick='dialog.close()'>
-        
+
         </table>""" % ini_to_dict('None'))
         gui.Dialog.__init__(self, title, doc)
 
@@ -1140,7 +1140,7 @@ class ErrorDialog(gui.Dialog):
 
         doc = html.HTML(globals={'gui': gui, 'dialog': self}, data="""
         <form id='form'>
-        
+
         <table>
         <tr><td><h1>&lt;!&gt;&nbsp;</h1>
         <td>""" + data + """
@@ -1159,7 +1159,7 @@ class DirtyDialog(gui.Dialog):
 
         doc = html.HTML(globals={'gui': gui, 'dialog': self}, data="""
         <form id='form'>
-        
+
         <table>
         <tr><td><h1>&lt;!&gt;&nbsp;</h1>
         <td>""" + data + """
