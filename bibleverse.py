@@ -12,12 +12,15 @@ HARD = 25
 class bibleverse(object):
     def __init__(self, difficulty):
         # load all verses into the file of verses
-        f = open('bible.txt', 'r')
+        #f = open('bible.txt', 'r')
         self.verses = []
         self.totalverses = []
-        for i in range(TOTALVERSES):
-            self.totalverses.append(f.readline())
-        f.close()
+        with open('bible.txt','r+', encoding='UTF8') as my_file:
+            for line in my_file:
+                self.totalverses.append(line)
+        # for i in range(TOTALVERSES):
+        #     self.totalverses.append(f.readline())
+        # f.close()
         self.diffnum = 0
         self.damaged = False
         random.shuffle(self.totalverses)
