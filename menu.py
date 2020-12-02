@@ -121,14 +121,14 @@ class Menu(engine.State):
                 base.PLAYING_MENU_MUSIC = True
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -136,17 +136,17 @@ class Menu(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return engine.Quit(self.main)
 
             if val == "continue game":
@@ -289,14 +289,14 @@ class Options(engine.State):
     def event(self, e):
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -304,17 +304,17 @@ class Options(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key == (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return Menu(self.main)
 
             if val == "back":
@@ -432,14 +432,14 @@ class SetDifficulty(engine.State):
         data = base.DATA
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -447,17 +447,17 @@ class SetDifficulty(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return Menu(self.main)
 
             if val == "back":
@@ -604,14 +604,14 @@ class About(engine.State):
         data = base.DATA
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -619,17 +619,17 @@ class About(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return Menu(self.main)
 
             if val == "back":
@@ -750,14 +750,14 @@ class Credits(engine.State):
         print ("Hello!")
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -765,17 +765,17 @@ class Credits(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return Menu(self.main)
 
             if val == "main menu":
@@ -877,14 +877,14 @@ class Help(engine.State):
         data = base.DATA
         ##		gameVariables = self.main.gameVariables
 
-        if e.type is KEYDOWN and e.key == K_UP:
+        if e.type == KEYDOWN and e.key == K_UP:
             self.cur = (self.cur - 1 + len(self.menu)) % len(self.menu)
             self.repaint()
-        if e.type is KEYDOWN and e.key == K_DOWN:
+        if e.type == KEYDOWN and e.key == K_DOWN:
             self.cur = (self.cur + 1 + len(self.menu)) % len(self.menu)
             self.repaint()
 
-        if e.type is MOUSEMOTION:
+        if e.type == MOUSEMOTION:
             for n, rect in self.zones:
                 if rect.collidepoint(e.pos):
                     if self.cur != n:
@@ -892,17 +892,17 @@ class Help(engine.State):
                         self.repaint()
 
         ##		ToDo: Finish Joystick movement settings
-        ##		if e.type is JOYAXISMOTION: and e.key == K_UP:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_UP:
         ##			self.cur = (self.cur-1+len(self.menu))%len(self.menu)
         ##			self.repaint()
-        ##		if e.type is JOYAXISMOTION: and e.key == K_DOWN:
+        ##		if e.type == JOYAXISMOTION: and e.key == K_DOWN:
         ##			self.cur = (self.cur+1+len(self.menu))%len(self.menu)
         ##			self.repaint()
 
-        if (e.type is KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type is MOUSEBUTTONDOWN) or (
-                e.type is JOYBUTTONDOWN):
+        if (e.type == KEYDOWN and e.key in (K_RETURN, K_ESCAPE)) or (e.type == MOUSEBUTTONDOWN) or (
+                e.type == JOYBUTTONDOWN):
             val = self.menu[self.cur]
-            if e.type is KEYDOWN and e.key == K_ESCAPE:
+            if e.type == KEYDOWN and e.key == K_ESCAPE:
                 return Menu(self.main)
 
             if val == "back":

@@ -1,6 +1,7 @@
 from builtins import str
 import base
 import pygame
+import re
 from pygame.locals import *
 from pgu import gui, html, tilevid
 
@@ -44,9 +45,12 @@ class SelectLevelDialog(gui.Dialog):
                 sel.add(levelName, levelName)
                 j += 1
             except ImportError as err:
+                error = str(err)
+                pattern = re.compile(rf"cannot import name '{levelName}' .*")
+                match = pattern.match(error)
                 # filter the other import errors
-                if str(err) != ("cannot import name " + levelName):
-                    raise "excepted import error from level script " + levelName + ": " + str(err)
+                if not match:
+                    raise BaseException("excepted import error from level script " + levelName + ": " + str(err))
                 j = 1
                 i += 1
 

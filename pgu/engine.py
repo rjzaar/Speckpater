@@ -1,4 +1,4 @@
-"""a state engine. 
+"""a state engine.
 """
 import pygame
 from pygame.locals import *
@@ -10,8 +10,8 @@ class State:
     Arguments:
         game -- The state engine.
         value -- I usually pass in a custom value to a state
-    
-    For all of the template methods, they should return None unless they return 
+
+    For all of the template methods, they should return None unless they return
     a new State to switch the engine to.
 
     """
@@ -25,7 +25,7 @@ class State:
 
     def paint(self, screen):
         """Template Method - Paint the screen.  Called once after the state is selected.
-        
+
         State is responsible for calling pygame.display.flip() or whatever.
 
         """
@@ -37,7 +37,7 @@ class State:
 
     def update(self, screen):
         """Template Method - Update the screen.
-        
+
         State is responsible for calling pygame.display.update(updates) or whatever.
 
         """
@@ -78,7 +78,7 @@ class Game:
 
     def run(self, state, screen=None):
         """Run the state engine, this is a infinite loop (until a quit occurs).
-        
+
         Arguments:
             game -- a state engine
             screen -- the screen
@@ -124,11 +124,11 @@ class Game:
 
     def event(self, e):
         """Template Method - called with each event, so the engine can capture special events.
-        
+
         Rturn a True value if the event is captured and does not need to be passed onto the current
         state
 
         """
-        if e.type is QUIT:
+        if e.type == QUIT:
             self.state = Quit(self)
             return 1

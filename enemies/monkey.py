@@ -25,7 +25,7 @@ class Monkey(BaseEnemy):
 
         ## How often the monkey should attack. Higher numbers = more infrequent
         self.nextAttackFrame = random.randrange(0, 10)
-        random.jumpahead(1)
+        # random.jumpahead(1)  # FIXME: replace jumpahead
 
     ## Monkey loop
     def loop(self, game, sprite):
@@ -55,4 +55,4 @@ class Monkey(BaseEnemy):
 
             ## Set the new time that the monkey should attack
             self.nextAttackFrame = game.frame + (1.0 / difficultyMul()) * random.randrange(15, 40)
-            random.jumpahead(1)
+            # random.jumpahead(1)  # FIXME: replace jumpahead

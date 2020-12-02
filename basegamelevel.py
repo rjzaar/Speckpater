@@ -744,9 +744,9 @@ class GameLevel(tilevid.Tilevid):
 
             for e in ev:
 
-                if (e.type is QUIT):
+                if (e.type == QUIT):
                     self.nextState = base.QUITGAME
-                elif (e.type is KEYDOWN):
+                elif (e.type == KEYDOWN):
                     # MAYO now add int the code to check for the bible being correct.
                     if ((e.key == K_RETURN) and self.inputing):
                         if txtbx.value == self.retval[2]:
@@ -765,7 +765,7 @@ class GameLevel(tilevid.Tilevid):
                         pygame.display.flip()
                         self.inputing = False
                     self.handleKeys(e.key)
-                elif (e.type is JOYBUTTONDOWN):
+                elif (e.type == JOYBUTTONDOWN):
                     self.handleButton(e)
                 else:
                     maingui.event(e)
