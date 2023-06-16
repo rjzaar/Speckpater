@@ -21,4 +21,5 @@ All help welcome.
 
 To run the game: run the main.py code.
 To edit a level press F11 in that level.
-Dependencies: Python 2.7, Pygame, PGU.
+Dependencies: Python 3, Pygame, PGU.
+

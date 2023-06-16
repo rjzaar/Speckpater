@@ -2,13 +2,14 @@ from distutils.core import setup
 import py2exe
 import glob
 import sys
+
 sys.argv.append("py2exe")
 sys.argv.append("--bundle")
 sys.argv.append("2")
 setup(
-    #console=["main.py"],
-    #zipfile=None,
-    windows = [
+    # console=["main.py"],
+    # zipfile=None,
+    windows=[
         {
             "script": "main.py",
             "icon_resources": [(1, "bibledave.ico")]
@@ -16,7 +17,7 @@ setup(
     ],
     data_files=[(".", glob.glob("./*.py") +
                  glob.glob("./*.ttf") +
-		 glob.glob("./*.txt")),
+                 glob.glob("./*.txt")),
                 ("enemies", glob.glob("enemies/*.py")),
                 ("images",
                  glob.glob("images/*.png") +

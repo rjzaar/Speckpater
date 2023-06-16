@@ -1,16 +1,15 @@
+from __future__ import absolute_import
 import pygame
 from pygame.locals import *
-import gui
-
+from . import gui
 
 screen = pygame.display.set_mode(
-    (640, 480), FULLSCREEN  ) # try adding DOUBLEBUF | HWSURFACE 
+    (640, 480), FULLSCREEN)  # try adding DOUBLEBUF | HWSURFACE
 # pygame.mouse.set_visible(0)
 
 
 app = gui.App()
-c = gui.Container(width=640,height=480)
-
+c = gui.Container(width=640, height=480)
 
 ##
 ## dialog 1
@@ -32,7 +31,6 @@ t2.add(gui.Button("Click Me!"))
 
 d1 = gui.Dialog(t1, t2)
 c.add(d1, 50, 150)
-
 
 ##
 ## dialog 2
@@ -56,34 +54,31 @@ t4.add(b1)
 d2 = gui.Dialog(t3, t4)
 c.add(d2, 50, 300)
 
-
 ##
 ## some labels
 ##
 
-l1 = gui.Label("Suppose this is a menu", color=(255, 255, 255) )
+l1 = gui.Label("Suppose this is a menu", color=(255, 255, 255))
 c.add(l1, 50, 50)
 
-l2 = gui.Label("Click <SPACE> to hide top dialog", color=(255, 255, 
-255) )
+l2 = gui.Label("Click <SPACE> to hide top dialog", color=(255, 255,
+                                                          255))
 c.add(l2, 50, 75)
 
-l3 = gui.Label("Opps... Did it happen?", color=(255, 255, 255) )
+l3 = gui.Label("Opps... Did it happen?", color=(255, 255, 255))
 
 ##
 ## app begins
 ##
 
 
-app.init(widget=c,screen=screen)
-
+app.init(widget=c, screen=screen)
 
 FRAME_EVT = USEREVENT + 1
 
 pygame.event.Event(FRAME_EVT)
 
 pygame.time.set_timer(FRAME_EVT, 30)
-
 
 _quit = 0
 
@@ -93,7 +88,7 @@ while _quit == 0:
     if event.type == FRAME_EVT:
         pygame.display.flip()
         continue
-        
+
     if event.type == KEYDOWN:
         if event.key == K_ESCAPE:
             _quit = 1
@@ -101,8 +96,7 @@ while _quit == 0:
         elif event.key == K_SPACE:
             d1.close()
             c.add(l3, 100, 100)
-        
-    app._event(event)
-    screen.fill((0,0,0))
-    app.paint(screen)
 
+    app._event(event)
+    screen.fill((0, 0, 0))
+    app.paint(screen)
